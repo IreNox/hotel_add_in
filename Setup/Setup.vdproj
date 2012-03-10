@@ -7,18 +7,12 @@
 "LanguageId" = "3:1031"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1031"
-"SccProjectName" = "8:"
-"SccLocalPath" = "8:"
-"SccAuxPath" = "8:"
-"SccProvider" = "8:"
+"SccProjectName" = "8:SAK"
+"SccLocalPath" = "8:SAK"
+"SccAuxPath" = "8:SAK"
+"SccProvider" = "8:SAK"
     "Hierarchy"
     {
-        "Entry"
-        {
-        "MsmKey" = "8:_052DF26F89264E4C9597BFE6EA283810"
-        "OwnerKey" = "8:_927053AD3E7AEB416BED806B17893D7B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
         "Entry"
         {
         "MsmKey" = "8:_316EA6F63E854BC58CD273AAC13CE58E"
@@ -27,32 +21,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_6614BF7910CCF62B0DC4EB97042330B2"
-        "OwnerKey" = "8:_927053AD3E7AEB416BED806B17893D7B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6614BF7910CCF62B0DC4EB97042330B2"
-        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6614BF7910CCF62B0DC4EB97042330B2"
-        "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_927053AD3E7AEB416BED806B17893D7B"
-        "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -85,18 +55,6 @@
         "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
         "MsmSig" = "8:_UNDEFINED"
         }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_927053AD3E7AEB416BED806B17893D7B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6614BF7910CCF62B0DC4EB97042330B2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -105,7 +63,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:..\\Binary\\Setup\\Setup.msi"
+        "OutputFilename" = "8:..\\..\\Binary\\Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -194,7 +152,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "Version" = "8:3.5.30729"
+                "FrameworkVersion" = "8:3.5.30729"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -202,26 +160,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_052DF26F89264E4C9597BFE6EA283810"
-            {
-            "SourcePath" = "8:HotelAddIn.tlb"
-            "TargetName" = "8:HotelAddIn.tlb"
-            "Tag" = "8:"
-            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:2"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_316EA6F63E854BC58CD273AAC13CE58E"
             {
             "SourcePath" = "8:..\\Binary\\sqlite3.dll"
@@ -240,68 +178,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6614BF7910CCF62B0DC4EB97042330B2"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_6614BF7910CCF62B0DC4EB97042330B2"
-                    {
-                    "Name" = "8:System.Data.SQLite.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Data.SQLite.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_927053AD3E7AEB416BED806B17893D7B"
-            {
-            "AssemblyRegister" = "3:2"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:HotelAddIn, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d9e66fe03e3b2b4c, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_927053AD3E7AEB416BED806B17893D7B"
-                    {
-                    "Name" = "8:HotelAddIn.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:HotelAddIn.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A80B28D1A909446886B9B5838CB31813"
@@ -403,6 +279,7 @@
         "ProductCode" = "8:{F923B11B-3083-47C3-8EEA-D39FBEDA1BE9}"
         "PackageCode" = "8:{C28D40ED-110A-4648-92B0-2060ED293D81}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
+        "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
@@ -926,7 +803,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8FEC43E4BDEB475A8000F1151693DE9D"
             {
-            "SourcePath" = "8:..\\HotelAddInApp\\obj\\x86\\Release\\HotelAddInApp.exe"
+            "SourcePath" = "8:..\\HotelAddInApp\\obj\\Debug\\HotelAddInApp.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
@@ -954,7 +831,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BBF2C2F82FAF45E89599FC71C86F66A3"
             {
-            "SourcePath" = "8:..\\DLL\\obj\\x86\\Release\\HotelAddIn.dll"
+            "SourcePath" = "8:..\\DLL\\obj\\Debug\\HotelAddIn.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"

@@ -18,15 +18,15 @@ Global
 		SccProjectUniqueName1 = DLL\\HotelAddIn.vbproj
 		SccProjectName1 = DLL
 		SccLocalPath1 = DLL
-		SccProjectUniqueName2 = Setup\\Setup.vdproj
-		SccProjectName2 = Setup
-		SccLocalPath2 = Setup
-		SccProjectUniqueName3 = HotelAddInApp\\HotelAddInApp.csproj
-		SccProjectName3 = HotelAddInApp
-		SccLocalPath3 = HotelAddInApp
-		SccProjectUniqueName4 = System.Data.CubeSql\\System.Data.CubeSql.csproj
-		SccProjectName4 = System.Data.CubeSql
-		SccLocalPath4 = System.Data.CubeSql
+		SccProjectUniqueName2 = HotelAddInApp\\HotelAddInApp.csproj
+		SccProjectName2 = HotelAddInApp
+		SccLocalPath2 = HotelAddInApp
+		SccProjectUniqueName3 = System.Data.CubeSql\\System.Data.CubeSql.csproj
+		SccProjectName3 = System.Data.CubeSql
+		SccLocalPath3 = System.Data.CubeSql
+		SccProjectUniqueName4 = Setup\\Setup.vdproj
+		SccProjectName4 = Setup
+		SccLocalPath4 = Setup
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
