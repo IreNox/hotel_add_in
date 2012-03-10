@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HotelAddInApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HotelAddInApp_dirs21_DIRS21_x0020_PMS_Interface" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://pmsif.dirs21.de/DIRSWs.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

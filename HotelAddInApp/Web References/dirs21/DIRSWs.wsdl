@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.dirs21.de/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.dirs21.de/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.dirs21.de/">
+      <s:element name="ReadActiveRoomtypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadActiveRoomtypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadActiveRoomtypesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAvailabilitiesPricesMinstay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edatum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadAvailabilitiesPricesMinstayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadAvailabilitiesPricesMinstayResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingAddOns">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingAddOnsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadBookingAddOnsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingdetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingdetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadBookingdetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingdetailsMerged">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingdetailsMergedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadBookingdetailsMergedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edatum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadBookingsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingsPMSValue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pmsvalue" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingsPMSValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadBookingsPMSValueResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingsPMSValueAndStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pmsvalue" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadBookingsPMSValueAndStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadBookingsPMSValueAndStatusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadInactiveRoomtypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadInactiveRoomtypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadInactiveRoomtypesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadNotificationFaxnumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadNotificationFaxnumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadNotificationFaxnumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteAvailabilitiesPricesMinstay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edatum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="availability" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="price" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="minstay" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteAvailabilitiesPricesMinstayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteAvailabilitiesPricesMinstayResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteAvailabilities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edatum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="availability" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteAvailabilitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteAvailabilitiesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteVaryingAvailabilities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vakanzen" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WriteVaryingAvailabilitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteVaryingAvailabilitiesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteBookingFlag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pmsvalue" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteBookingFlagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteBookingFlagResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteMinstay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edatum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="minstay" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteMinstayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteMinstayResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteVaryingMinStays">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mindestNaechte" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteVaryingMinStaysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteVaryingMinStaysResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WritePrices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edatum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="preis" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WritePricesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WritePricesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteVaryingPrices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="preise" type="tns:ArrayOfFloat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFloat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="float" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WriteVaryingPricesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteVaryingPricesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteVaryingAvailabilitiesMinStaysPrices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sdatum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vakanzen" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="mindestNaechte" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="preise" type="tns:ArrayOfFloat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteVaryingAvailabilitiesMinStaysPricesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteVaryingAvailabilitiesMinStaysPricesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteDefinedAvailabilitiesMinStaysPrices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="knr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ztyp" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dayRateDetails" type="tns:ArrayOfDayRateDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDayRateDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DayRateDetail" nillable="true" type="tns:DayRateDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DayRateDetail">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:date" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Available" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinNights" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WriteDefinedAvailabilitiesMinStaysPricesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteDefinedAvailabilitiesMinStaysPricesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ReadActiveRoomtypesSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadActiveRoomtypes" />
+  </wsdl:message>
+  <wsdl:message name="ReadActiveRoomtypesSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadActiveRoomtypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadAvailabilitiesPricesMinstaySoapIn">
+    <wsdl:part name="parameters" element="tns:ReadAvailabilitiesPricesMinstay" />
+  </wsdl:message>
+  <wsdl:message name="ReadAvailabilitiesPricesMinstaySoapOut">
+    <wsdl:part name="parameters" element="tns:ReadAvailabilitiesPricesMinstayResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingAddOnsSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadBookingAddOns" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingAddOnsSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadBookingAddOnsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingdetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadBookingdetails" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingdetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadBookingdetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingdetailsMergedSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadBookingdetailsMerged" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingdetailsMergedSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadBookingdetailsMergedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingsSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadBookings" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingsSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadBookingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingsPMSValueSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadBookingsPMSValue" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingsPMSValueSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadBookingsPMSValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingsPMSValueAndStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadBookingsPMSValueAndStatus" />
+  </wsdl:message>
+  <wsdl:message name="ReadBookingsPMSValueAndStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadBookingsPMSValueAndStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadInactiveRoomtypesSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadInactiveRoomtypes" />
+  </wsdl:message>
+  <wsdl:message name="ReadInactiveRoomtypesSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadInactiveRoomtypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadNotificationFaxnumberSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadNotificationFaxnumber" />
+  </wsdl:message>
+  <wsdl:message name="ReadNotificationFaxnumberSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadNotificationFaxnumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteAvailabilitiesPricesMinstaySoapIn">
+    <wsdl:part name="parameters" element="tns:WriteAvailabilitiesPricesMinstay" />
+  </wsdl:message>
+  <wsdl:message name="WriteAvailabilitiesPricesMinstaySoapOut">
+    <wsdl:part name="parameters" element="tns:WriteAvailabilitiesPricesMinstayResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteAvailabilitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteAvailabilities" />
+  </wsdl:message>
+  <wsdl:message name="WriteAvailabilitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteAvailabilitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingAvailabilitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteVaryingAvailabilities" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingAvailabilitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteVaryingAvailabilitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteBookingFlagSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteBookingFlag" />
+  </wsdl:message>
+  <wsdl:message name="WriteBookingFlagSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteBookingFlagResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteMinstaySoapIn">
+    <wsdl:part name="parameters" element="tns:WriteMinstay" />
+  </wsdl:message>
+  <wsdl:message name="WriteMinstaySoapOut">
+    <wsdl:part name="parameters" element="tns:WriteMinstayResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingMinStaysSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteVaryingMinStays" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingMinStaysSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteVaryingMinStaysResponse" />
+  </wsdl:message>
+  <wsdl:message name="WritePricesSoapIn">
+    <wsdl:part name="parameters" element="tns:WritePrices" />
+  </wsdl:message>
+  <wsdl:message name="WritePricesSoapOut">
+    <wsdl:part name="parameters" element="tns:WritePricesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingPricesSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteVaryingPrices" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingPricesSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteVaryingPricesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingAvailabilitiesMinStaysPricesSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteVaryingAvailabilitiesMinStaysPrices" />
+  </wsdl:message>
+  <wsdl:message name="WriteVaryingAvailabilitiesMinStaysPricesSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteVaryingAvailabilitiesMinStaysPricesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteDefinedAvailabilitiesMinStaysPricesSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteDefinedAvailabilitiesMinStaysPrices" />
+  </wsdl:message>
+  <wsdl:message name="WriteDefinedAvailabilitiesMinStaysPricesSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteDefinedAvailabilitiesMinStaysPricesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DIRS21_x0020_PMS-InterfaceSoap">
+    <wsdl:operation name="ReadActiveRoomtypes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert aktive Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liste mit aktiven Zimmertypen (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: ZimmertypID (ZTyp, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: Standardbezeichnung (Standardname, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Bezeichnung vergeben vom Hotelier (Gastgeberbezeichnung, String)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadActiveRoomtypesSoapIn" />
+      <wsdl:output message="tns:ReadActiveRoomtypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAvailabilitiesPricesMinstay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert Vakanzen, Preis, Anzahl Mindestübernachtungen im angegebenen Zeitraum für einen Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Start-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;End-Datum (String)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liste (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: Datum (Datum, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: Kapazitaet (Kapazitaet, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Preis (Preis, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 4: Anzahl Mindesübernachtungen (MinNaechte, Integer)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadAvailabilitiesPricesMinstaySoapIn" />
+      <wsdl:output message="tns:ReadAvailabilitiesPricesMinstaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingAddOns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert Zusatzleistungen zu einer Buchung.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Buchungsnummer (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Buchungszusatzleistungen (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: System-ID (UID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: BuchungsID (BID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Anzahl der Zusatzleistung (ZLAnzahl, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 4: Beschreibung (ZLText, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 5: Einzelpreis (ZLEPreis, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 6: Summe pro Tag (ZLSumme, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 7: Permanente aufsteigende ID der Zusatzleistung (ZLPermanentID, Integer)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadBookingAddOnsSoapIn" />
+      <wsdl:output message="tns:ReadBookingAddOnsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingdetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert Buchungsdetails für eine Buchung.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Buchungsnummer (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Buchungsdetails (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: ID (ID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: BuchungsID (BID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Anreise-Datum (Anreise, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 4: Abreise-Datum (Abreise, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 5: ZimmertypID (ZTyp, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 6: Zimmeranzahl (Anzahl, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 7: Einzelpreis pro Zimmer (Einzelpreis, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 8: Summe pro Tag (Einzelsumme, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 9: Zimmertyp-Bezeichnung (ZTypBezeichnung, String)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadBookingdetailsSoapIn" />
+      <wsdl:output message="tns:ReadBookingdetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingdetailsMerged">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert zusammengefasste Buchungsdetails für eine Buchung. Pro gebuchten Zimmertypen gibt es eine Zeile.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Buchungsnummer (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Buchungsdetails (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: BuchungsID (BID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Anreise-Datum (Anreise, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 4: Abreise-Datum (Abreise, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 5: ZimmertypID (ZTyp, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 6: Zimmeranzahl (Anzahl, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 7: Durchschnitts-Einzelpreis pro Zimmer (Einzelpreis, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 8: Summe fuer Zimmertypen fuer gesamten Zeitraum (Einzelsumme, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 9: Zimmertyp-Bezeichnung (ZTypBezeichnung, String)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadBookingdetailsMergedSoapIn" />
+      <wsdl:output message="tns:ReadBookingdetailsMergedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert Buchungen aus angegebenen Zeitraum.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Start-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;End-Datum (String)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liste mit Buchungen(Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: BuchungsID (BID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: Anrede (Anrede, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Titel (Titel, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 4: Name (Name, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 5: Vorname (Vorname, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 6: Firma (Firma, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 7: Strasse (Strasse, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 8: PLZ (PLZ, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 9: Ort (Ort, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 10: Land (Land, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 11: Telefon (Telefon, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 12: Fax (Fax, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 13: Email (Email, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 14: Bemerkungen (Bemerkungen, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 15: Kredikartentyp (CCTyp, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 16: Kreditkarteninhaber (CCInhaber, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 17: Kreditkartennummer (CCNummer, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 18: Kreditkartengültigkeit (CCGueltigBis, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 19: Gesamtsumme (Gesamtsumme, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 20: Buchungsbestaetigung (Buchungsbestaetigung, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 21: Buchungsdatum (Buchungsdatum, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 22: Status aktiv/inaktiv (Status, Boolean)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 23: Channel (Channel, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 24: Waehrung (Waehrung, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 25: gds-Rate (gdsrate, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 26: gds-Buchungsnummer (gdsbid, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 27: Garantie (Garantie, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 28: Buchungsart: 0: normale B., 2: Sonderratenb., 3: GDS-B., 4: Pauschalangebots-B. (Buchungsart, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 29: Garantielink (Grantielink, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 30: Travelagent (Travelagent, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 31: Beliebig verwendbarer Wert (PMS_Value, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 32: Name zu einer Buchung (z.B. Pauschalangebotsname bei Buchungsart=4) (BuchungsName, String)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadBookingsSoapIn" />
+      <wsdl:output message="tns:ReadBookingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingsPMSValue">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert Buchungen mit angegebenen PMS-Value (Datenbank-Defaultwert ist 0).&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;PMS_Value (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liste mit Buchungen (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: BuchungsID (BID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: Anrede (Anrede, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Titel (Titel, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 4: Name (Name, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 5: Vorname (Vorname, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 6: Firma (Firma, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 7: Strasse (Strasse, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 8: PLZ (PLZ, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 9: Ort (Ort, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 10: Land (Land, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 11: Telefon (Telefon, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 12: Fax (Fax, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 13: Email (Email, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 14: Bemerkungen (Bemerkungen, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 15: Kredikartentyp (CCTyp, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 16: Kreditkarteninhaber (CCInhaber, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 17: Kreditkartennummer (CCNummer, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 18: Kreditkartengültigkeit (CCGueltigBis, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 19: Gesamtsumme (Gesamtsumme, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 20: Buchungsbestaetigung (Buchungsbestaetigung, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 21: Buchungsdatum (Buchungsdatum, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 22: Status aktiv/inaktiv (Status, Boolean)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 23: Channel (Channel, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 24: Waehrung (Waehrung, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 25: gds-Rate (gdsrate, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 26: gds-Buchungsnummer (gdsbid, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 27: Garantie (Garantie, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 28: Buchungsart: 0: normale B., 2: Sonderratenb., 3: GDS-B., 4: Pauschalangebots-B. (Buchungsart, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 29: Garantielink (Grantielink, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 30: Travelagent (Travelagent, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 31: Beliebig verwendbarer Wert (PMS_Value, Integer)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadBookingsPMSValueSoapIn" />
+      <wsdl:output message="tns:ReadBookingsPMSValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingsPMSValueAndStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert Buchungen mit angegebenen PMS-Value (Datenbank-Defaultwert ist 0) und Buchungs-Status. (Wird zum Abrufen von Stornierungen oder Umbuchungen empfohlen.)&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;PMS_Value (Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Status (Integer, 1: aktive Buchung, 0: Storno, 5: Umbuchung (Umbuchungen koennen nur ueber diese Funktion abgerufen werden))&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liste mit Buchungen (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: BuchungsID (BID, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: Anrede (Anrede, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 3: Titel (Titel, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 4: Name (Name, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 5: Vorname (Vorname, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 6: Firma (Firma, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 7: Strasse (Strasse, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 8: PLZ (PLZ, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 9: Ort (Ort, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 10: Land (Land, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 11: Telefon (Telefon, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 12: Fax (Fax, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 13: Email (Email, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 14: Bemerkungen (Bemerkungen, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 15: Kredikartentyp (CCTyp, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 16: Kreditkarteninhaber (CCInhaber, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 17: Kreditkartennummer (CCNummer, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 18: Kreditkartengültigkeit (CCGueltigBis, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 19: Gesamtsumme (Gesamtsumme, Float)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 20: Buchungsbestaetigung (Buchungsbestaetigung, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 21: Buchungsdatum (Buchungsdatum, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 22: Status aktiv/inaktiv (Status, Boolean)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 23: Channel (Channel, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 24: Waehrung (Waehrung, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 25: gds-Rate (gdsrate, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 26: gds-Buchungsnummer (gdsbid, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 27: Garantie (Garantie, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 28: Buchungsart: 0: normale B., 2: Sonderratenb., 3: GDS-B., 4: Pauschalangebots-B. (Buchungsart, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 29: Garantielink (Grantielink, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 30: Travelagent (Travelagent, String)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 30: Eventuell neue Buchungs-ID zu dieser Umbuchung (falls Status 5), sonst -1 (RefBID, int)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 31: Beliebig verwendbarer Wert (PMS_Value, Integer)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadBookingsPMSValueAndStatusSoapIn" />
+      <wsdl:output message="tns:ReadBookingsPMSValueAndStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadInactiveRoomtypes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert aktuell nicht verwendete DIRS21-Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liste mit nicht verwendeten DIRS21-Zimmertypen (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: ZimmertypID (ZTyp, Integer)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 2: Standardbezeichnung (Standardname, String)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadInactiveRoomtypesSoapIn" />
+      <wsdl:output message="tns:ReadInactiveRoomtypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadNotificationFaxnumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Liefert Faxnummern für Buchungsbenachrichtigungen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liste mit Faxnummern (Dataset) &lt;i&gt;(Spaltenbezeichnung, Datentyp)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Spalte 1: Faxnummer (Telefax, String)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:ReadNotificationFaxnumberSoapIn" />
+      <wsdl:output message="tns:ReadNotificationFaxnumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteAvailabilitiesPricesMinstay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt Vakanzen, Preis, Anzahl Mindestübernachtungen im angegebenen Zeitraum für einen Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Start-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;End-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Vakanzen (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preis (Float),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mindestübernachtung (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteAvailabilitiesPricesMinstaySoapIn" />
+      <wsdl:output message="tns:WriteAvailabilitiesPricesMinstaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteAvailabilities">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt Vakanzen im angebenen Zeitraum für einen Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Start-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;End-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Vakanzen (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteAvailabilitiesSoapIn" />
+      <wsdl:output message="tns:WriteAvailabilitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingAvailabilities">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt variierende Vakanzen ab Startdatum für einen Zimmertypen. Enddatum wird nach Laenge des uebergebenen Integer-Arrays berrechnet, welches die Vakanzen am jeweiligen Tag enthaelt.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Startdatum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Vakanzen (Integer-Array)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteVaryingAvailabilitiesSoapIn" />
+      <wsdl:output message="tns:WriteVaryingAvailabilitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteBookingFlag">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt Wert in 'PMS_Value' für eine Buchung, zur freien Verwendung (z.B. um bereits importierte Buchungen zu kennzeichnen).&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;BuchungsID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Wert für PMS_Value (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteBookingFlagSoapIn" />
+      <wsdl:output message="tns:WriteBookingFlagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteMinstay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt Anzahl Mindesübernachtungen im angebenen Zeitraum für einen Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Start-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;End-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mindestübernachtung (Integer)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteMinstaySoapIn" />
+      <wsdl:output message="tns:WriteMinstaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingMinStays">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt variierende Mindestnaechte ab Startdatum für einen Zimmertypen. Enddatum wird nach Laenge des uebergebenen Integer-Arrays berrechnet, welches die Mindestnaechte am jeweiligen Tag enthaelt.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Startdatum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;MindestNaechte (Integer-Array)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteVaryingMinStaysSoapIn" />
+      <wsdl:output message="tns:WriteVaryingMinStaysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WritePrices">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt Preis im angebenen Zeitraum für einen Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Start-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;End-Datum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preis (Float)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WritePricesSoapIn" />
+      <wsdl:output message="tns:WritePricesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingPrices">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt variierende Preise ab Startdatum für einen Zimmertypen. Enddatum wird nach Laenge des uebergebenen Float-Arrays berrechnet, welches die Preise am jeweiligen Tag enthaelt.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Startdatum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;MindestNaechte (Integer-Array)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteVaryingPricesSoapIn" />
+      <wsdl:output message="tns:WriteVaryingPricesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingAvailabilitiesMinStaysPrices">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt variierende Daten ab Startdatum für einen Zimmertypen. Enddatum wird nach Laenge der uebergebenen Arrays berrechnet, welche die Daten am jeweiligen Tag enthalten. Alle drei Arrays muessen die gleiche Laenge aufweisen!&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Startdatum (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;MindestNaechte (Integer-Array)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteVaryingAvailabilitiesMinStaysPricesSoapIn" />
+      <wsdl:output message="tns:WriteVaryingAvailabilitiesMinStaysPricesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteDefinedAvailabilitiesMinStaysPrices">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Schreibt variierende Daten für einen Zimmertypen.&lt;/b&gt;&lt;br&gt;&lt;i&gt;Parameter&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Kundennummer (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Passwort (String),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;ZimmertypID (Integer),&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Daten (DayRateDetailCollection)&lt;br&gt;&lt;i&gt;Rückgabewert&lt;/i&gt;:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;true wenn erfolgreich (Boolean)&lt;br&gt;&lt;i&gt;Exceptions:&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;SoapException</wsdl:documentation>
+      <wsdl:input message="tns:WriteDefinedAvailabilitiesMinStaysPricesSoapIn" />
+      <wsdl:output message="tns:WriteDefinedAvailabilitiesMinStaysPricesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DIRS21_x0020_PMS-InterfaceSoap" type="tns:DIRS21_x0020_PMS-InterfaceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadActiveRoomtypes">
+      <soap:operation soapAction="http://www.dirs21.de/ReadActiveRoomtypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAvailabilitiesPricesMinstay">
+      <soap:operation soapAction="http://www.dirs21.de/ReadAvailabilitiesPricesMinstay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingAddOns">
+      <soap:operation soapAction="http://www.dirs21.de/ReadBookingAddOns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingdetails">
+      <soap:operation soapAction="http://www.dirs21.de/ReadBookingdetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingdetailsMerged">
+      <soap:operation soapAction="http://www.dirs21.de/ReadBookingdetailsMerged" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookings">
+      <soap:operation soapAction="http://www.dirs21.de/ReadBookings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingsPMSValue">
+      <soap:operation soapAction="http://www.dirs21.de/ReadBookingsPMSValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingsPMSValueAndStatus">
+      <soap:operation soapAction="http://www.dirs21.de/ReadBookingsPMSValueAndStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadInactiveRoomtypes">
+      <soap:operation soapAction="http://www.dirs21.de/ReadInactiveRoomtypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadNotificationFaxnumber">
+      <soap:operation soapAction="http://www.dirs21.de/ReadNotificationFaxnumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteAvailabilitiesPricesMinstay">
+      <soap:operation soapAction="http://www.dirs21.de/WriteAvailabilitiesPricesMinstay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteAvailabilities">
+      <soap:operation soapAction="http://www.dirs21.de/WriteAvailabilities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingAvailabilities">
+      <soap:operation soapAction="http://www.dirs21.de/WriteVaryingAvailabilities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteBookingFlag">
+      <soap:operation soapAction="http://www.dirs21.de/WriteBookingFlag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteMinstay">
+      <soap:operation soapAction="http://www.dirs21.de/WriteMinstay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingMinStays">
+      <soap:operation soapAction="http://www.dirs21.de/WriteVaryingMinStays" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritePrices">
+      <soap:operation soapAction="http://www.dirs21.de/WritePrices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingPrices">
+      <soap:operation soapAction="http://www.dirs21.de/WriteVaryingPrices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingAvailabilitiesMinStaysPrices">
+      <soap:operation soapAction="http://www.dirs21.de/WriteVaryingAvailabilitiesMinStaysPrices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteDefinedAvailabilitiesMinStaysPrices">
+      <soap:operation soapAction="http://www.dirs21.de/WriteDefinedAvailabilitiesMinStaysPrices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DIRS21_x0020_PMS-InterfaceSoap12" type="tns:DIRS21_x0020_PMS-InterfaceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadActiveRoomtypes">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadActiveRoomtypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAvailabilitiesPricesMinstay">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadAvailabilitiesPricesMinstay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingAddOns">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadBookingAddOns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingdetails">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadBookingdetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingdetailsMerged">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadBookingdetailsMerged" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookings">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadBookings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingsPMSValue">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadBookingsPMSValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBookingsPMSValueAndStatus">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadBookingsPMSValueAndStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadInactiveRoomtypes">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadInactiveRoomtypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadNotificationFaxnumber">
+      <soap12:operation soapAction="http://www.dirs21.de/ReadNotificationFaxnumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteAvailabilitiesPricesMinstay">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteAvailabilitiesPricesMinstay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteAvailabilities">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteAvailabilities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingAvailabilities">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteVaryingAvailabilities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteBookingFlag">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteBookingFlag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteMinstay">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteMinstay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingMinStays">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteVaryingMinStays" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritePrices">
+      <soap12:operation soapAction="http://www.dirs21.de/WritePrices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingPrices">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteVaryingPrices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteVaryingAvailabilitiesMinStaysPrices">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteVaryingAvailabilitiesMinStaysPrices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteDefinedAvailabilitiesMinStaysPrices">
+      <soap12:operation soapAction="http://www.dirs21.de/WriteDefinedAvailabilitiesMinStaysPrices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DIRS21_x0020_PMS-Interface">
+    <wsdl:port name="DIRS21_x0020_PMS-InterfaceSoap" binding="tns:DIRS21_x0020_PMS-InterfaceSoap">
+      <soap:address location="http://pmsif.dirs21.de/DIRSWs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DIRS21_x0020_PMS-InterfaceSoap12" binding="tns:DIRS21_x0020_PMS-InterfaceSoap12">
+      <soap12:address location="http://pmsif.dirs21.de/DIRSWs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
