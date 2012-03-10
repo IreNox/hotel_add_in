@@ -106,6 +106,7 @@ namespace System.Data.CubeSql.Native
 #if DEBUG
                 File.WriteAllText("C:\\test.sql", sql);
 #endif
+
                 if (select)
                 {
                     return NativeMethods.cubesql_select(
@@ -128,10 +129,6 @@ namespace System.Data.CubeSql.Native
 
                     return IntPtr.Zero;
                 }
-
-                this.Close();
-
-                return IntPtr.Zero;
             }
 
             return IntPtr.Zero;
@@ -166,10 +163,7 @@ namespace System.Data.CubeSql.Native
                 );
             }
 
-            if (err == 0)
-            {
-                _state = ConnectionState.Open;
-            }
+            _state = (err == 0 ? ConnectionState.Open : ConnectionState.Broken);
         }
 
         public override void Close()
