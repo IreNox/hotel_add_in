@@ -13,7 +13,7 @@
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>System.Data.CubeSql.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>System.Data.CubeSql.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="System.Data.CubeSql.pfx" />
+    <None Include="System.Data.CubeSql.snk" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
