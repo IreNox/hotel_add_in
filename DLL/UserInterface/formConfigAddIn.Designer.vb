@@ -22,15 +22,15 @@ Partial Class formConfigAddIn
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtPathSQLite = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.txtPathBonBon = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cmdOk = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmdCancel = New System.Windows.Forms.Button
-        Me.textPathData = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
+        Me.txtPathSQLite = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtPathBonBon = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdOk = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdCancel = New System.Windows.Forms.Button()
+        Me.textPathData = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtPathSQLite
@@ -40,7 +40,7 @@ Partial Class formConfigAddIn
         Me.txtPathSQLite.Location = New System.Drawing.Point(91, 66)
         Me.txtPathSQLite.Name = "txtPathSQLite"
         Me.txtPathSQLite.Size = New System.Drawing.Size(188, 20)
-        Me.txtPathSQLite.TabIndex = 47
+        Me.txtPathSQLite.TabIndex = 2
         '
         'Label3
         '
@@ -58,7 +58,7 @@ Partial Class formConfigAddIn
         Me.txtPathBonBon.Location = New System.Drawing.Point(91, 39)
         Me.txtPathBonBon.Name = "txtPathBonBon"
         Me.txtPathBonBon.Size = New System.Drawing.Size(188, 20)
-        Me.txtPathBonBon.TabIndex = 44
+        Me.txtPathBonBon.TabIndex = 1
         '
         'Label2
         '
@@ -74,7 +74,7 @@ Partial Class formConfigAddIn
         Me.cmdOk.Location = New System.Drawing.Point(123, 130)
         Me.cmdOk.Name = "cmdOk"
         Me.cmdOk.Size = New System.Drawing.Size(75, 23)
-        Me.cmdOk.TabIndex = 46
+        Me.cmdOk.TabIndex = 4
         Me.cmdOk.Text = "Ok"
         Me.cmdOk.UseVisualStyleBackColor = True
         '
@@ -93,7 +93,7 @@ Partial Class formConfigAddIn
         Me.cmdCancel.Location = New System.Drawing.Point(204, 130)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(75, 23)
-        Me.cmdCancel.TabIndex = 50
+        Me.cmdCancel.TabIndex = 5
         Me.cmdCancel.Text = "Abbrechen"
         Me.cmdCancel.UseVisualStyleBackColor = True
         '
@@ -104,7 +104,7 @@ Partial Class formConfigAddIn
         Me.textPathData.Location = New System.Drawing.Point(91, 92)
         Me.textPathData.Name = "textPathData"
         Me.textPathData.Size = New System.Drawing.Size(188, 20)
-        Me.textPathData.TabIndex = 51
+        Me.textPathData.TabIndex = 2
         '
         'Label4
         '

@@ -15,8 +15,44 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_316EA6F63E854BC58CD273AAC13CE58E"
+        "MsmKey" = "8:_15FF248DF6A043FEAD889B279DAC6497"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3528A0372C86A4A3054DC016535C0ABA"
+        "OwnerKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3528A0372C86A4A3054DC016535C0ABA"
+        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
+        "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
+        "OwnerKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
+        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
+        "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -27,19 +63,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A80B28D1A909446886B9B5838CB31813"
+        "MsmKey" = "8:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CB6AF2FB90254A5B955559873E0A22F1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -53,6 +83,18 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -100,7 +142,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:..\\Binary\\Setup\\Setup.msi"
+        "OutputFilename" = "8:..\\..\\Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -152,7 +194,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729"
+                "FrameworkVersion" = "8:3.5.30729 "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -160,9 +202,9 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_316EA6F63E854BC58CD273AAC13CE58E"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_15FF248DF6A043FEAD889B279DAC6497"
             {
-            "SourcePath" = "8:..\\Binary\\sqlite3.dll"
+            "SourcePath" = "8:..\\..\\Binary\\sqlite3.dll"
             "TargetName" = "8:sqlite3.dll"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
@@ -180,10 +222,41 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A80B28D1A909446886B9B5838CB31813"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3528A0372C86A4A3054DC016535C0ABA"
             {
-            "SourcePath" = "8:..\\Misc\\Icon\\icon.ico"
-            "TargetName" = "8:icon.ico"
+            "SourcePath" = "8:HotelAddIn.tlb"
+            "TargetName" = "8:HotelAddIn.tlb"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:2"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_39B4D53DF38387E0CF2E5291FA33E3BC"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:HotelAddIn, Version=5.2.0.0, Culture=neutral, PublicKeyToken=2d34470cdb0fab2f, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_39B4D53DF38387E0CF2E5291FA33E3BC"
+                    {
+                    "Name" = "8:HotelAddIn.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:HotelAddIn.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
             "Condition" = "8:"
@@ -197,18 +270,49 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CB6AF2FB90254A5B955559873E0A22F1"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7E4A157DA09D8C22261F46965AD4F19C"
             {
-            "SourcePath" = "8:..\\Misc\\Images\\setup.jpg"
-            "TargetName" = "8:setup.jpg"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_7E4A157DA09D8C22261F46965AD4F19C"
+                    {
+                    "Name" = "8:System.Data.SQLite.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Data.SQLite.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
+            {
+            "SourcePath" = "8:..\\..\\Misc\\Images\\setup.jpg"
+            "TargetName" = "8:setup.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:FALSE"
             "ReadOnly" = "11:FALSE"
             "Hidden" = "11:FALSE"
             "System" = "11:FALSE"
@@ -276,15 +380,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HotelAddIn"
-        "ProductCode" = "8:{F923B11B-3083-47C3-8EEA-D39FBEDA1BE9}"
-        "PackageCode" = "8:{C28D40ED-110A-4648-92B0-2060ED293D81}"
+        "ProductCode" = "8:{D4D9BD54-8075-4E8F-B4F5-44C934B038CB}"
+        "PackageCode" = "8:{FF6FAC28-4B01-4646-A749-F6FD3B66BCD7}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:3.0.1"
+        "ProductVersion" = "8:5.3.0"
         "Manufacturer" = "8:Ioniel Network"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -294,8 +398,8 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:http://www.Ioniel.de/"
-        "ARPPRODUCTICON" = "8:_A80B28D1A909446886B9B5838CB31813"
-        "ARPIconIndex" = "3:0"
+        "ARPPRODUCTICON" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
+        "ARPIconIndex" = "3:32512"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:0"
@@ -383,18 +487,18 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BD41788F78184B819FCDB4A96D50B33B"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1C41AD982BD04A62972F7D0F000DC848"
             {
             "Name" = "8:Lodgit AddIn"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
+            "IconIndex" = "3:32512"
             "Transitive" = "11:FALSE"
             "Target" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
             "Folder" = "8:_5F41AE0985D34D76802E38EDB73CB425"
             "WorkingFolder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
-            "Icon" = "8:_A80B28D1A909446886B9B5838CB31813"
+            "Icon" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
             "Feature" = "8:"
             }
         }
@@ -425,7 +529,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_CB6AF2FB90254A5B955559873E0A22F1"
+                            "Value" = "8:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -476,7 +580,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_CB6AF2FB90254A5B955559873E0A22F1"
+                            "Value" = "8:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -521,7 +625,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_CB6AF2FB90254A5B955559873E0A22F1"
+                            "Value" = "8:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -570,7 +674,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_CB6AF2FB90254A5B955559873E0A22F1"
+                            "Value" = "8:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -606,7 +710,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_CB6AF2FB90254A5B955559873E0A22F1"
+                            "Value" = "8:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -803,7 +907,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8FEC43E4BDEB475A8000F1151693DE9D"
             {
-            "SourcePath" = "8:..\\HotelAddInApp\\obj\\Debug\\HotelAddInApp.exe"
+            "SourcePath" = "8:..\\HotelAddInApp\\obj\\x86\\Release\\HotelAddInApp.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
@@ -831,7 +935,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BBF2C2F82FAF45E89599FC71C86F66A3"
             {
-            "SourcePath" = "8:..\\DLL\\obj\\Debug\\HotelAddIn.dll"
+            "SourcePath" = "8:..\\DLL\\obj\\x86\\Release\\HotelAddIn.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"

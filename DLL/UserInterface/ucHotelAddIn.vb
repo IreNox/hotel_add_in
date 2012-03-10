@@ -35,6 +35,17 @@ Public Class ucHotelAddIn
     Private Sub cmdGruppen_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdGruppen.Click
         txtAnzeige.Text = _addin.RsArrGruppe(dateSelector.Value)
     End Sub
+
+    Private Sub cmdJahr_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdJahr.Click
+        Dim text As String = ""
+        Dim data As Integer(,) = _addin.RsJahr(dateSelector.Value.Year)
+
+        For Each line In data
+            text += line.ToString() + Environment.NewLine
+        Next
+
+        txtAnzeige.Text = text
+    End Sub
 #End Region
 
 #Region "Properties"

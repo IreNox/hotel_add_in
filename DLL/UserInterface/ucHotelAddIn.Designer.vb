@@ -22,16 +22,17 @@ Partial Class ucHotelAddIn
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtAnzeige = New System.Windows.Forms.TextBox
-        Me.cmdGruppen = New System.Windows.Forms.Button
-        Me.cmdArrGesamt = New System.Windows.Forms.Button
-        Me.cmdArrEinzeln = New System.Windows.Forms.Button
-        Me.cmdFrüstück = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmdGaeste = New System.Windows.Forms.Button
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel
-        Me.dateSelector = New System.Windows.Forms.DateTimePicker
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel
+        Me.txtAnzeige = New System.Windows.Forms.TextBox()
+        Me.cmdGruppen = New System.Windows.Forms.Button()
+        Me.cmdArrGesamt = New System.Windows.Forms.Button()
+        Me.cmdArrEinzeln = New System.Windows.Forms.Button()
+        Me.cmdFrüstück = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdGaeste = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.dateSelector = New System.Windows.Forms.DateTimePicker()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.cmdJahr = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
@@ -135,6 +136,7 @@ Partial Class ucHotelAddIn
         Me.TableLayoutPanel1.Controls.Add(Me.cmdFrüstück, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.dateSelector, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.cmdJahr, 2, 1)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
@@ -170,6 +172,18 @@ Partial Class ucHotelAddIn
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(584, 448)
         Me.TableLayoutPanel2.TabIndex = 42
         '
+        'cmdJahr
+        '
+        Me.cmdJahr.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cmdJahr.Location = New System.Drawing.Point(389, 61)
+        Me.cmdJahr.Name = "cmdJahr"
+        Me.cmdJahr.Size = New System.Drawing.Size(186, 52)
+        Me.cmdJahr.TabIndex = 39
+        Me.cmdJahr.Text = "Statistik"
+        Me.cmdJahr.UseVisualStyleBackColor = True
+        '
         'ucHotelAddIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -194,4 +208,5 @@ Partial Class ucHotelAddIn
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents dateSelector As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cmdJahr As System.Windows.Forms.Button
 End Class

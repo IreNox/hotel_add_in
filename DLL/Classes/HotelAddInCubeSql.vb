@@ -91,7 +91,7 @@ Public Class CubeSqlAddIn
 
             For Each field As String In fields
                 If Not first Then str.Append(",")
-                str.AppendLine("    booking." + field)
+                str.AppendLine(field)
 
                 first = False
             Next
@@ -197,7 +197,7 @@ Public Class CubeSqlAddIn
 #Region "Anzahl"
     Public Function RsAnzahlGästeImHaus(ByVal Datum As Date) As Integer
         Dim ret As Integer = 0
-        Dim table = Me.CreateObjectSql("date([BU_DATUM_VON]) <= date('" + Datum.ToString("yyyy-MM-dd") + "') AND date([BU_DATUM_BIS]) > date('" + Datum.ToString("yyyy-MM-dd") + "')", "BU_PERS_TOTAL")
+        Dim table = Me.CreateObjectSql("date([BU_DATUM_VON]) <= date('" + Datum.ToString("yyyy-MM-dd") + "') AND date([BU_DATUM_BIS]) > date('" + Datum.ToString("yyyy-MM-dd") + "')", "booking.BU_PERS_TOTAL")
 
         'Query("SELECT * FROM b_buchungen WHERE date([BU_DATUM_VON]) <= date('" + Datum.ToString("yyyy-MM-dd") + "') AND date([BU_DATUM_BIS]) > date('" + Datum.ToString("yyyy-MM-dd") + "')")
 
@@ -212,7 +212,7 @@ Public Class CubeSqlAddIn
 
     Public Function RsAnzahlFrühstück(ByVal Datum As Date) As Integer
         Dim ret As Integer
-        Dim table = Me.CreateObjectSql("date([BU_DATUM_VON]) < date('" + Datum.ToString("yyyy-MM-dd") + "') AND date([BU_DATUM_BIS]) >= date('" + Datum.ToString("yyyy-MM-dd") + "')", "BU_PERS_TOTAL")
+        Dim table = Me.CreateObjectSql("date([BU_DATUM_VON]) < date('" + Datum.ToString("yyyy-MM-dd") + "') AND date([BU_DATUM_BIS]) >= date('" + Datum.ToString("yyyy-MM-dd") + "')", "booking.BU_PERS_TOTAL")
 
         'Query("SELECT * FROM b_buchungen WHERE date([BU_DATUM_VON]) < date('" + Datum.ToString("yyyy-MM-dd") + "') AND date([BU_DATUM_BIS]) >= date('" + Datum.ToString("yyyy-MM-dd") + "')")
 
@@ -330,13 +330,15 @@ Public Class CubeSqlAddIn
         Dim b As Integer = 1
         Dim c As Integer = table.Rows.Count + 1
         Dim Datum As Date
+        Dim departure As Date
         Dim value As Integer = 0
 
         For Each row As DataRow In table.Rows
             Datum = row(keyArrival)
+            departure = row(keyDepature)
 
-            If Datum.Year = Jahr Or row(keyDepature).Year = Jahr Then
-                While Datum < row(keyDepature)
+            If Datum.Year = Jahr Or departure.Year = Jahr Then
+                While Datum < departure
                     If Datum.Year = Jahr Then
                         x(Datum.Month, Datum.Day) += row(keyPersons)
                     End If
@@ -364,19 +366,7 @@ Public Class CubeSqlAddIn
         status.Show()
         status.SetStatus("Lese Datenbank...")
 
-        _rsJahrWork(x, Jahr, Me.CreateObjectSql(""), "BU_DATUM_VON", "BU_DATUM_BIS", "BU_PERS_TOTAL")
-
-        'Query("SELECT * FROM b_buchungen")
-
-        If Jahr = 2011 Then
-            Dim bb As New HotelAddIn()
-
-            status.SetStatus("Lese RS2...")
-
-            _rsJahrWork(x, Jahr, bb.Query("SELECT * FROM RS2"), "ANREISE", "ABREISE", "PERSONEN")
-
-            bb.Dispose()
-        End If
+        _rsJahrWork(x, Jahr, Me.CreateObjectSql("", "date(booking.BU_DATUM_VON) as arrival", "date(booking.BU_DATUM_BIS) as departure", "BU_PERS_TOTAL"), "arrival", "departure", "BU_PERS_TOTAL")
 
         x3 = x
 

@@ -22,17 +22,17 @@ Partial Class formConfigCubeSql
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.textUsername = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.cmdCancel = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.textPort = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.textHost = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cmdOk = New System.Windows.Forms.Button
-        Me.textPassword = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
+        Me.textUsername = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmdCancel = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.textPort = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.textHost = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdOk = New System.Windows.Forms.Button()
+        Me.textPassword = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'textUsername
@@ -40,7 +40,7 @@ Partial Class formConfigCubeSql
         Me.textUsername.Location = New System.Drawing.Point(91, 92)
         Me.textUsername.Name = "textUsername"
         Me.textUsername.Size = New System.Drawing.Size(188, 20)
-        Me.textUsername.TabIndex = 60
+        Me.textUsername.TabIndex = 3
         '
         'Label4
         '
@@ -57,7 +57,7 @@ Partial Class formConfigCubeSql
         Me.cmdCancel.Location = New System.Drawing.Point(204, 154)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(75, 23)
-        Me.cmdCancel.TabIndex = 59
+        Me.cmdCancel.TabIndex = 6
         Me.cmdCancel.Text = "Abbrechen"
         Me.cmdCancel.UseVisualStyleBackColor = True
         '
@@ -75,7 +75,8 @@ Partial Class formConfigCubeSql
         Me.textPort.Location = New System.Drawing.Point(91, 66)
         Me.textPort.Name = "textPort"
         Me.textPort.Size = New System.Drawing.Size(188, 20)
-        Me.textPort.TabIndex = 56
+        Me.textPort.TabIndex = 2
+        Me.textPort.Text = "4430"
         '
         'Label3
         '
@@ -91,7 +92,7 @@ Partial Class formConfigCubeSql
         Me.textHost.Location = New System.Drawing.Point(91, 39)
         Me.textHost.Name = "textHost"
         Me.textHost.Size = New System.Drawing.Size(188, 20)
-        Me.textHost.TabIndex = 53
+        Me.textHost.TabIndex = 1
         '
         'Label2
         '
@@ -107,7 +108,7 @@ Partial Class formConfigCubeSql
         Me.cmdOk.Location = New System.Drawing.Point(123, 154)
         Me.cmdOk.Name = "cmdOk"
         Me.cmdOk.Size = New System.Drawing.Size(75, 23)
-        Me.cmdOk.TabIndex = 55
+        Me.cmdOk.TabIndex = 5
         Me.cmdOk.Text = "Ok"
         Me.cmdOk.UseVisualStyleBackColor = True
         '
@@ -115,8 +116,10 @@ Partial Class formConfigCubeSql
         '
         Me.textPassword.Location = New System.Drawing.Point(91, 118)
         Me.textPassword.Name = "textPassword"
+        Me.textPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.textPassword.Size = New System.Drawing.Size(188, 20)
-        Me.textPassword.TabIndex = 62
+        Me.textPassword.TabIndex = 4
+        Me.textPassword.UseSystemPasswordChar = True
         '
         'Label5
         '
