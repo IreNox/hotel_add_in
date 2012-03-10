@@ -63,15 +63,15 @@ Namespace My.Resources
         '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die SELECT
         '''	booking.rowid		AS booking_id,
-        '''	booking.BU_DATUM_VON	AS booking_arrival,
-        '''	booking.BU_DATUM_BIS	AS booking_depature,
+        '''	date(booking.BU_DATUM_VON)	AS booking_arrival,
+        '''	date(booking.BU_DATUM_BIS)	AS booking_depature,
         '''	booking.BU_PERS_TOTAL	AS booking_persons,
         '''	room.ME_BEZ		AS room_name,
         '''	(customer.KU_VNAME || &quot; &quot; || customer.KU_NAME || &quot; &quot; || customer.KU_FIRMA) AS customer_name,
         '''	(CASE
         '''		WHEN booking.BU_GRUPPE != 0
         '''	THEN
-        '''		(SELECT (customer2.KU_VNAME || &quot; &quot; || customer2.KU_NAME || &quot; &quot; || customer2.KU_FIRMA) FROM b_buchungen as booking2, kunden as customer2 WHERE booking2.rowid = booking.BU [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        '''		(SELECT (customer2.KU_VNAME || &quot; &quot; || customer2.KU_NAME || &quot; &quot; || customer2.KU_FIRMA) FROM b_buchungen as booking2, kunden as customer2 WHERE booking2.rowid  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         '''</summary>
         Friend ReadOnly Property queryArr() As String
             Get

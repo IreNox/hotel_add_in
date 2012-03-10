@@ -1,7 +1,8 @@
 ﻿Imports System.IO
 Imports System.Text
 Imports System.Data
-Imports System.Data.CubeSql.Native
+Imports System.Data.Odbc
+'Imports System.Data.CubeSql.Native
 Imports System.Threading
 Imports System.Windows.Forms
 Imports System.Collections.Generic
@@ -11,8 +12,8 @@ Imports System.Runtime.InteropServices
 <Microsoft.VisualBasic.ComClass()> _
 Public Class CubeSqlAddIn
 #Region "Vars"
-    Private dbConn As CubeSqlConnection
-    Private dbCmd As CubeSqlCommand
+    Private dbConn As OdbcConnection
+    Private dbCmd As OdbcCommand
 
     Private Jahr As Integer
     Private x3(12, 31) As Integer
@@ -25,10 +26,10 @@ Public Class CubeSqlAddIn
         Try
             Dim data As String = Settings.PathSQLite
 
-            dbConn = New CubeSqlConnection(_buildConnectionString())
+            dbConn = New OdbcConnection(_buildConnectionString())
             'dbConn.Open()
 
-            dbCmd = New CubeSqlCommand()
+            dbCmd = New OdbcCommand()
             dbCmd.Connection = dbConn
         Catch ex As Exception
             MessageBox.Show("Fehler: " + ex.Message)
@@ -44,7 +45,7 @@ Public Class CubeSqlAddIn
 #Region "Private Member"
     Private Function _buildConnectionString() As String
         Return String.Format( _
-            "Host={0};Port={1};Username={2};Password={3};Database={4}", _
+            "driver={{cubeSQL ODBC}};database={4};server={0};uid={2};pwd={3};", _
             Settings.CubeSqlHost, _
             Settings.CubeSqlPort, _
             Settings.CubeSqlUsername, _

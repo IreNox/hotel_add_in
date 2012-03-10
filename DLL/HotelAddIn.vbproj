@@ -208,12 +208,6 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\System.Data.CubeSql\System.Data.CubeSql.csproj">
-      <Project>{4FFC8C30-1191-4E3C-A702-356E0F86587C}</Project>
-      <Name>System.Data.CubeSql</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

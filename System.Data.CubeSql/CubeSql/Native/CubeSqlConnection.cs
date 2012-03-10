@@ -163,7 +163,7 @@ namespace System.Data.CubeSql.Native
                 );
             }
 
-            _state = (err == 0 ? ConnectionState.Open : ConnectionState.Broken);
+            _state = (err == 0 ? ConnectionState.Open : ConnectionState.Closed);
         }
 
         public override void Close()

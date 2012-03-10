@@ -120,8 +120,8 @@
   <data name="queryArr" xml:space="preserve">
     <value>SELECT
 	booking.rowid		AS booking_id,
-	booking.BU_DATUM_VON	AS booking_arrival,
-	booking.BU_DATUM_BIS	AS booking_depature,
+	date(booking.BU_DATUM_VON)	AS booking_arrival,
+	date(booking.BU_DATUM_BIS)	AS booking_depature,
 	booking.BU_PERS_TOTAL	AS booking_persons,
 	room.ME_BEZ		AS room_name,
 	(customer.KU_VNAME || " " || customer.KU_NAME || " " || customer.KU_FIRMA) AS customer_name,
