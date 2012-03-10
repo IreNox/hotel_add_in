@@ -82,14 +82,14 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CubeSql\C\CubeSqlCommand.cs">
+    <Compile Include="CubeSql\Native\CubeSqlCommand.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CubeSql\C\CubeSqlConnection.cs">
+    <Compile Include="CubeSql\Native\CubeSqlConnection.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CubeSql\C\CubeSqlDataReader.cs" />
-    <Compile Include="CubeSql\C\NativeMethods.cs" />
+    <Compile Include="CubeSql\Native\CubeSqlDataReader.cs" />
+    <Compile Include="CubeSql\Native\NativeMethods.cs" />
     <Compile Include="CubeSql\JSON\Parser\Getters.cs" />
     <Compile Include="CubeSql\JSON\Parser\JSON.cs" />
     <Compile Include="CubeSql\JSON\Parser\JsonParser.cs" />
