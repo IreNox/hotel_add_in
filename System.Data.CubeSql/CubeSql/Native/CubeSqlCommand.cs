@@ -115,7 +115,6 @@ namespace System.Data.CubeSql.Native
                                     obj = (b == 0 ? false : true);
                                     break;
                                 case CubeSqlType.Date:
-                                    //IntPtr p1 = NativeMethods.cubesql_cursor_field(sql, r, c, out tmp);
                                     IntPtr p1 = NativeMethods.cubesql_cursor_cstring_static(
                                         sql,
                                         r,
