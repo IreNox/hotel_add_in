@@ -78,8 +78,8 @@ namespace HotelAddInApp
             StringBuilder str = new StringBuilder();
 
             str.AppendLine("SELECT");
-            str.AppendLine("    booking.BU_DATUM_VON as arrival,");
-            str.AppendLine("    booking.BU_DATUM_BIS as depature,");
+            str.AppendLine("    date(booking.BU_DATUM_VON) as arrival,");
+            str.AppendLine("    date(booking.BU_DATUM_BIS) as depature,");
             str.AppendLine("    (CASE");
 
             foreach (RoomType type in RoomType.ReadAll())
