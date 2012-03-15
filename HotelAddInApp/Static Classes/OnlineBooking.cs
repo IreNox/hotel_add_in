@@ -236,10 +236,11 @@ namespace HotelAddInApp
                 int c = 0, p = 0, a = table.Rows.Count;
                 foreach (DataRow row in table.Rows)
                 {
-                    int dirsId = (int)(long)row["dirsid"];
-                    DateTime depature = (DateTime)row["depature"];
+                    int dirsId = Int16.Parse(row["dirsid"].ToString());
+                    DateTime arrival = DateTime.Parse(row["arrival"].ToString());
+                    DateTime depature = DateTime.Parse(row["depature"].ToString());
 
-                    for (DateTime date = (DateTime)row["arrival"]; date < depature; date = date.AddDays(1))
+                    for (DateTime date = arrival; date < depature; date = date.AddDays(1))
                     {
                         string id = DayAva.GetID(date, dirsId);
 
