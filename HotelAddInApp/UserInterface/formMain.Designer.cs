@@ -43,39 +43,39 @@
             this.pageOnlineBooking = new System.Windows.Forms.TabPage();
             this.splitContainerBooking = new System.Windows.Forms.SplitContainer();
             this.listBooking = new HotelAddInApp.ifListView();
-            this.colBookingId = new System.Windows.Forms.ColumnHeader();
-            this.colBookingName = new System.Windows.Forms.ColumnHeader();
-            this.colBookingCompany = new System.Windows.Forms.ColumnHeader();
-            this.colBookingDate = new System.Windows.Forms.ColumnHeader();
+            this.colBookingId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBookingName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBookingCompany = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBookingDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listBookingData = new HotelAddInApp.ifListView();
-            this.colBkShowProperty = new System.Windows.Forms.ColumnHeader();
-            this.colBkShowValue = new System.Windows.Forms.ColumnHeader();
+            this.colBkShowProperty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkShowValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.listBookingDetails = new HotelAddInApp.ifListView();
-            this.colBkDetailsArrival = new System.Windows.Forms.ColumnHeader();
-            this.colBkDetailsDepature = new System.Windows.Forms.ColumnHeader();
-            this.colBkDetailsRoomtype = new System.Windows.Forms.ColumnHeader();
-            this.colBkDetailsRoomCount = new System.Windows.Forms.ColumnHeader();
-            this.colBkDetailsPricePerRoom = new System.Windows.Forms.ColumnHeader();
-            this.colBkDetailsPricePerDay = new System.Windows.Forms.ColumnHeader();
-            this.colBkDetailsRoomtypeId = new System.Windows.Forms.ColumnHeader();
+            this.colBkDetailsArrival = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkDetailsDepature = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkDetailsRoomtype = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkDetailsRoomCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkDetailsPricePerRoom = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkDetailsPricePerDay = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkDetailsRoomtypeId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listBookingAddOns = new HotelAddInApp.ifListView();
-            this.colBkAddOnsCount = new System.Windows.Forms.ColumnHeader();
-            this.colBkAddOnsDescription = new System.Windows.Forms.ColumnHeader();
-            this.colBkAddOnsPrice = new System.Windows.Forms.ColumnHeader();
-            this.colBkAddOnsPricePerDay = new System.Windows.Forms.ColumnHeader();
+            this.colBkAddOnsCount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkAddOnsDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkAddOnsPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBkAddOnsPricePerDay = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelBookingButtons = new System.Windows.Forms.Panel();
             this.buttonBookingRemoveAva = new System.Windows.Forms.Button();
             this.buttonOnlineDelete = new System.Windows.Forms.Button();
             this.pageCallWatcher = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listCall = new HotelAddInApp.ifListView();
-            this.colCallLine = new System.Windows.Forms.ColumnHeader();
-            this.colCallDateTime = new System.Windows.Forms.ColumnHeader();
-            this.colCallNumber = new System.Windows.Forms.ColumnHeader();
-            this.colCallDuration = new System.Windows.Forms.ColumnHeader();
-            this.colCallUnits = new System.Windows.Forms.ColumnHeader();
+            this.colCallLine = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCallDateTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCallNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCallDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCallUnits = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupCallHelp = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -97,6 +97,7 @@
             this.textStatus = new System.Windows.Forms.TextBox();
             this.menuConfig = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuConfigAddIn = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConfigCubeSQL = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfigDirs21 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfigRooms = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfigCallWatcher = new System.Windows.Forms.ToolStripMenuItem();
@@ -107,7 +108,6 @@
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmdConfig = new System.Windows.Forms.Button();
             this.timerRead = new System.Windows.Forms.Timer(this.components);
-            this.menuConfigCubeSQL = new System.Windows.Forms.ToolStripMenuItem();
             this.groupStatus.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.pageQuery.SuspendLayout();
@@ -788,6 +788,14 @@
             this.menuConfigAddIn.Text = "AddIn-Einstellungen";
             this.menuConfigAddIn.Click += new System.EventHandler(this.menuConfigAddIn_Click);
             // 
+            // menuConfigCubeSQL
+            // 
+            this.menuConfigCubeSQL.Enabled = false;
+            this.menuConfigCubeSQL.Name = "menuConfigCubeSQL";
+            this.menuConfigCubeSQL.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigCubeSQL.Text = "CubeSQL-Einstellungen";
+            this.menuConfigCubeSQL.Click += new System.EventHandler(this.menuConfigCubeSQL_Click);
+            // 
             // menuConfigDirs21
             // 
             this.menuConfigDirs21.Name = "menuConfigDirs21";
@@ -862,13 +870,6 @@
             this.timerRead.Interval = 60000;
             this.timerRead.Tick += new System.EventHandler(this.timerRead_Tick);
             // 
-            // menuConfigCubeSQL
-            // 
-            this.menuConfigCubeSQL.Name = "menuConfigCubeSQL";
-            this.menuConfigCubeSQL.Size = new System.Drawing.Size(268, 22);
-            this.menuConfigCubeSQL.Text = "CubeSQL-Einstellungen";
-            this.menuConfigCubeSQL.Click += new System.EventHandler(this.menuConfigCubeSQL_Click);
-            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -880,8 +881,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formMain";
             this.Text = "Lodgit Online Buchungs Schnittstelle";
-            this.Load += new System.EventHandler(this.formMain_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formMain_FormClosing);
+            this.Load += new System.EventHandler(this.formMain_Load);
             this.groupStatus.ResumeLayout(false);
             this.groupStatus.PerformLayout();
             this.tabControl1.ResumeLayout(false);

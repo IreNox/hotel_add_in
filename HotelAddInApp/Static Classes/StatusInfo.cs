@@ -75,6 +75,7 @@ namespace HotelAddInApp
                         ToolTipIcon.Info
                     );
                     break;
+#if PHONE
                 case "callwatcher":
                     if (!(bool)value)
                     {
@@ -93,6 +94,7 @@ namespace HotelAddInApp
                         form.cmdCallStart.Text = "Stoppen";
                     } 
                     break;
+#endif
             }
         }
         #endregion
@@ -132,7 +134,9 @@ namespace HotelAddInApp
         #region Member
         public static void SetCallWatcher()
         {
+#if PHONE
             _invokeSet("callwatcher", CallWatcher.Running);
+#endif
         }
 
         public static void WriteLine(string line, params object[] args)

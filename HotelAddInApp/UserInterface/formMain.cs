@@ -20,6 +20,12 @@ namespace HotelAddInApp
         public formMain()
         {
             InitializeComponent();
+
+#if !PHONE
+            tabControl1.TabPages.Remove(pageCallWatcher);
+            menuConfigCallWatcher.Enabled = false;
+            menuConfigCallNumbers.Enabled = false;
+#endif
         }
 
         private void formMain_Load(object sender, EventArgs e)
@@ -128,7 +134,9 @@ namespace HotelAddInApp
 
         private void cmdExit_Click(object sender, EventArgs e)
         {
+#if PHONE
             if (CallWatcher.Running) CallWatcher.StopWatch();
+#endif
 
             Settings.SetComputerSetting("status", textStatus.Text);
 
@@ -150,6 +158,7 @@ namespace HotelAddInApp
 
         private void cmdCallStart_Click(object sender, EventArgs e)
         {
+#if PHONE
             if (CallWatcher.Running)
             {
                 CallWatcher.StopWatch();
@@ -158,6 +167,7 @@ namespace HotelAddInApp
             {
                 CallWatcher.StartWatch();
             }
+#endif
         }
         #endregion
 
@@ -178,7 +188,7 @@ namespace HotelAddInApp
             form.Dispose();
 
             Program.AddIn.Dispose();
-            Program.AddIn = new CubeSqlAddIn();
+            Program.AddIn = new LodgitAddIn();
         }
 
         private void menuConfigCubeSQL_Click(object sender, EventArgs e)
@@ -189,7 +199,7 @@ namespace HotelAddInApp
             form.Dispose();
 
             Program.AddIn.Dispose();
-            Program.AddIn = new CubeSqlAddIn();
+            Program.AddIn = new LodgitAddIn();
         }
 
         private void menuConfigDirs21_Click(object sender, EventArgs e)
@@ -214,12 +224,14 @@ namespace HotelAddInApp
 
         private void menuConfigCallWatcher_Click(object sender, EventArgs e)
         {
+#if PHONE
             var form = new formConfigCallWatcher();
 
             form.ShowDialog(this);
             form.Dispose();
 
             CallWatcher.Refresh();
+#endif
         }
 
         private void menuConfigCallNumbers_Click(object sender, EventArgs e)
@@ -450,7 +462,7 @@ namespace HotelAddInApp
         #endregion
 
         #region Properties
-        public CubeSqlAddIn AddIn
+        public LodgitAddIn AddIn
         {
             get { return ucHotelAddIn1.AddIn; }
         }

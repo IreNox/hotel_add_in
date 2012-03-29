@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace HotelAddInApp
 {
+#if PHONE
     internal static class CallWatcher
     {
         #region Vars
@@ -395,4 +396,5 @@ namespace HotelAddInApp
         }
         #endregion
     }
+#endif
 }

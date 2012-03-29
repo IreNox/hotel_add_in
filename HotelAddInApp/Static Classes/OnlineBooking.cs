@@ -35,7 +35,7 @@ namespace HotelAddInApp
         #region Private Member - Read
         private static StreamWriter _prepairFile()
         {
-            string filename = Settings.GetSetting<string>("dirs21.output");
+            string filename = Settings.GetComputerSetting<string>("dirs21.output");
             StreamWriter stream = new StreamWriter(filename, true);
 
             if (stream.BaseStream.Length == 0)
