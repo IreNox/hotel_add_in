@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HotelAddIn", "DLL\HotelAddIn.vbproj", "{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}"
@@ -8,71 +10,33 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelAddInApp", "HotelAddInApp\HotelAddInApp.csproj", "{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://ion02.de:8080/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DLL\\HotelAddIn.vbproj
-		SccProjectName1 = DLL
-		SccLocalPath1 = DLL
-		SccProjectUniqueName2 = HotelAddInApp\\HotelAddInApp.csproj
-		SccProjectName2 = HotelAddInApp
-		SccLocalPath2 = HotelAddInApp
-		SccProjectUniqueName3 = Setup\\Setup.vdproj
-		SccProjectName3 = Setup
-		SccLocalPath3 = Setup
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|Mixed Platforms = Debug|Mixed Platforms
-		Debug|Win32 = Debug|Win32
 		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-		Release|Mixed Platforms = Release|Mixed Platforms
-		Release|Win32 = Release|Win32
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Debug|Win32.ActiveCfg = Debug|x86
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Debug|x86.ActiveCfg = Debug|x86
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Debug|x86.Build.0 = Debug|x86
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Release|Mixed Platforms.Build.0 = Release|x86
-		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Release|Win32.ActiveCfg = Release|x86
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Release|x86.ActiveCfg = Release|x86
 		{2EE1CAC8-4942-49C8-9F9D-E9C383AAD3E5}.Release|x86.Build.0 = Release|x86
 		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Debug|Any CPU.ActiveCfg = Debug
-		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Debug|Win32.ActiveCfg = Debug
-		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Debug|Win32.Build.0 = Debug
 		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Debug|x86.ActiveCfg = Debug
 		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|Any CPU.ActiveCfg = Release
 		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|Any CPU.Build.0 = Release
-		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|Mixed Platforms.ActiveCfg = Release
-		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|Mixed Platforms.Build.0 = Release
-		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|Win32.ActiveCfg = Release
-		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|Win32.Build.0 = Release
 		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|x86.ActiveCfg = Release
 		{EE7A0EF4-3DD4-4A27-812C-9C9D3710C0FE}.Release|x86.Build.0 = Release
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Debug|Win32.ActiveCfg = Debug|x86
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Debug|x86.ActiveCfg = Debug|x86
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Debug|x86.Build.0 = Debug|x86
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Release|Mixed Platforms.Build.0 = Release|x86
-		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Release|Win32.ActiveCfg = Release|x86
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Release|x86.ActiveCfg = Release|x86
 		{2CC6B276-A7EC-4BF2-B08F-8695C49183EF}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection

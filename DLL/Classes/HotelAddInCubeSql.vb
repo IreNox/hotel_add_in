@@ -2,7 +2,6 @@
 Imports System.Text
 Imports System.Data
 Imports System.Data.Odbc
-'Imports System.Data.CubeSql.Native
 Imports System.Threading
 Imports System.Windows.Forms
 Imports System.Collections.Generic

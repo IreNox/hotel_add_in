@@ -21,25 +21,19 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7D2A08CB82057967E0B3F4CAA4C47DD7"
-        "OwnerKey" = "8:_864D57BC74B9EEBCE18C078391460357"
+        "MsmKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
+        "OwnerKey" = "8:_902F557658371772E9087FB5D621C26D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7D2A08CB82057967E0B3F4CAA4C47DD7"
+        "MsmKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
         "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7D2A08CB82057967E0B3F4CAA4C47DD7"
-        "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_864D57BC74B9EEBCE18C078391460357"
+        "MsmKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
         "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -47,6 +41,12 @@
         {
         "MsmKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_902F557658371772E9087FB5D621C26D"
+        "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,13 +76,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_864D57BC74B9EEBCE18C078391460357"
+        "OwnerKey" = "8:_902F557658371772E9087FB5D621C26D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7D2A08CB82057967E0B3F4CAA4C47DD7"
+        "OwnerKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -93,7 +93,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:..\\..\\Binary\\Setup.msi"
+        "OutputFilename" = "8:..\\Binary\\Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -130,7 +130,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:..\\..\\Setup.msi"
+        "OutputFilename" = "8:..\\Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -149,15 +149,15 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5.SP1"
                     {
-                    "Name" = "8:.NET Framework 3.5"
-                    "ProductCode" = "8:Microsoft.Net.Framework.3.5"
+                    "Name" = "8:.NET Framework 3.5 SP1"
+                    "ProductCode" = "8:Microsoft.Net.Framework.3.5.SP1"
                     }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.4.5"
                     {
-                    "Name" = "8:Windows Installer 3.1"
-                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    "Name" = "8:Windows Installer 4.5"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.4.5"
                     }
                 }
             }
@@ -182,7 +182,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729   "
+                "FrameworkVersion" = "8:3.5.30729     "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -192,7 +192,7 @@
         {
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_15FF248DF6A043FEAD889B279DAC6497"
             {
-            "SourcePath" = "8:..\\..\\Binary\\sqlite3.dll"
+            "SourcePath" = "8:..\\Binary\\sqlite3.dll"
             "TargetName" = "8:sqlite3.dll"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
@@ -210,14 +210,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7D2A08CB82057967E0B3F4CAA4C47DD7"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_89650A4EEBE9A8690B271D3B83A12597"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_7D2A08CB82057967E0B3F4CAA4C47DD7"
+                    "_89650A4EEBE9A8690B271D3B83A12597"
                     {
                     "Name" = "8:System.Data.SQLite.dll"
                     "Attributes" = "3:512"
@@ -241,14 +241,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_864D57BC74B9EEBCE18C078391460357"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_902F557658371772E9087FB5D621C26D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:HotelAddIn, Version=5.5.0.0, Culture=neutral, PublicKeyToken=2d34470cdb0fab2f, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:HotelAddIn, Version=5.6.0.0, Culture=neutral, PublicKeyToken=2d34470cdb0fab2f, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_864D57BC74B9EEBCE18C078391460357"
+                    "_902F557658371772E9087FB5D621C26D"
                     {
                     "Name" = "8:HotelAddIn.dll"
                     "Attributes" = "3:512"
@@ -274,7 +274,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
             {
-            "SourcePath" = "8:..\\..\\Misc\\Images\\setup.jpg"
+            "SourcePath" = "8:setup.jpg"
             "TargetName" = "8:setup.jpg"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
@@ -348,15 +348,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HotelAddIn"
-        "ProductCode" = "8:{039CE665-C50E-4211-B090-1120FE8E870B}"
-        "PackageCode" = "8:{8B6771DA-D7B7-47A3-89CA-AC276D9EAC37}"
+        "ProductCode" = "8:{2082165A-92ED-4432-B79D-C9F0788B7B56}"
+        "PackageCode" = "8:{20E6D620-5DE9-488E-A445-6549533D066C}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.6.0"
+        "ProductVersion" = "8:5.7.0"
         "Manufacturer" = "8:Ioniel Network"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -482,7 +482,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8AE3E6D69E804F1C8D7527B6C75DC628"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Status"
+                    "DisplayName" = "8:Progress"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
@@ -533,7 +533,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_182F8E0330A44ADD86508AB73E3C7B9E"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Fertig"
+                    "DisplayName" = "8:Finished"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
@@ -578,7 +578,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_1A502D5CF1CB462584C016D59830F238"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Willkommen"
+                    "DisplayName" = "8:Welcome"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
@@ -627,7 +627,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_385814ED0C5648CB817C017996430297"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installationsordner"
+                    "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
@@ -663,7 +663,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_607FA93A962B4B1AB33C4D87B18A87DB"
                     {
                     "Sequence" = "3:320"
-                    "DisplayName" = "8:Installation bestätigen"
+                    "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
@@ -701,7 +701,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_403424A9FCCD4596A62D9AD891A0DDAA"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installationsordner"
+                    "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
@@ -723,7 +723,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_865A8E95B2974772A4D5EE4AD5297427"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Installation bestätigen"
+                    "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
@@ -745,7 +745,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_91C9AE2BF94840FEA4184CAA27848CE7"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Willkommen"
+                    "DisplayName" = "8:Welcome"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
@@ -802,7 +802,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_FADF223915584B7A9B6EBA0034B2FD8B"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Fertig"
+                    "DisplayName" = "8:Finished"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
@@ -833,7 +833,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CDA3878E9213439FB4371832B5BEBE49"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Status"
+                    "DisplayName" = "8:Progress"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"

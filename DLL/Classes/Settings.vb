@@ -7,25 +7,25 @@ Public Class Settings
         Return Registry.CurrentUser.CreateSubKey("Software\\Ioniel Network\\HotelAddIn\\", RegistryKeyPermissionCheck.ReadWriteSubTree)
     End Function
 
-    Private Shared Function _getValue(ByVal key As String) As String
-        Dim key2 = Registry.CurrentUser.OpenSubKey("Software\\Ioniel Network\\HotelAddIn\\", False)
+	Private Shared Function _getValue(ByVal key As String) As Object
+		Dim key2 = Registry.CurrentUser.OpenSubKey("Software\\Ioniel Network\\HotelAddIn\\", False)
 
-        If key2 Is Nothing Then key2 = _createKey()
+		If key2 Is Nothing Then key2 = _createKey()
 
-        Return key2.GetValue(key)
-    End Function
+		Return key2.GetValue(key)
+	End Function
 
-    Private Shared Sub _setValue(ByVal key As String, ByVal value As String)
-        Dim key2 = Registry.CurrentUser.OpenSubKey("Software\\Ioniel Network\\HotelAddIn\\", True)
+	Private Shared Sub _setValue(ByVal key As String, ByVal value As Object)
+		Dim key2 = Registry.CurrentUser.OpenSubKey("Software\\Ioniel Network\\HotelAddIn\\", True)
 
-        If key2 Is Nothing Then key2 = _createKey()
+		If key2 Is Nothing Then key2 = _createKey()
 
-        key2.SetValue(key, value)
-    End Sub
+		key2.SetValue(key, value)
+	End Sub
 #End Region
 
 #Region "Fields"
-    Public Shared Property PathBonBon() As String
+	Public Shared Property PathBonBon() As String
         Get
             Return _getValue("PathBonBon")
         End Get
