@@ -30,9 +30,67 @@ namespace HotelAddInApp
 
         private void formMain_Load(object sender, EventArgs e)
         {
-            StatusInfo.StatusRunning = false;
+			listCall.Init();
+			listCall.Bindings.AddRange(
+				new ifListView.ListViewBinding[] {
+					new ifListView.SubItemBinding(0, "ExtensionLine"),
+					new ifListView.SubItemBinding(1, "DateTime"),
+					new ifListView.SubItemBinding(2, "CallNumber"),
+					new ifListView.SubItemBinding(3, "Duration"),
+					new ifListView.SubItemBinding(4, "Units")
+				}
+			);
 
-            timerRead.Enabled = Settings.GetComputerSetting<bool>("dirs21.autoread");
+			listBooking.Init();
+			listBooking.Bindings.AddRange(
+				new ifListView.ListViewBinding[] {
+					new ifListView.SubItemBinding(0, "BID"),
+					new ifListView.SubItemBinding(1, o=> ((Booking)o).Vorname + " " + ((Booking)o).Name),
+					new ifListView.SubItemBinding(2, "Firma"),
+					new ifListView.SubItemBinding(3, "Buchungsdatum"),
+					new ifListView.PropertyBinding("Checked", "Entered")
+				}
+			);
+
+			listBookingData.Init();
+			listBookingData.Bindings.AddRange(
+				new ifListView.ListViewBinding[] {
+					new ifListView.SubItemBinding(0, "Key"),
+					new ifListView.SubItemBinding(1, "Value")
+				}
+			);
+
+			listBookingAddOns.Init();
+			listBookingAddOns.Bindings.AddRange(
+				new ifListView.ListViewBinding[] {
+					new ifListView.SubItemBinding(0, "ZLAnzahl"),
+					new ifListView.SubItemBinding(1, "ZLText"),
+					new ifListView.SubItemBinding(2, "ZLEPreis"),
+					new ifListView.SubItemBinding(3, "ZLSumme")
+				}
+			);
+
+			listBookingDetails.Init();
+			listBookingDetails.Bindings.AddRange(
+				new ifListView.ListViewBinding[] {
+					new ifListView.SubItemBinding(0, o => ((Booking.BookingDetail)o).Anreise.ToString("dd.MM.yyy")),
+					new ifListView.SubItemBinding(1, o => ((Booking.BookingDetail)o).Abreise.ToString("dd.MM.yyy")),
+					new ifListView.SubItemBinding(2, "ZTypBezeichnung"),
+					new ifListView.SubItemBinding(3, "Anzahl"),
+					new ifListView.SubItemBinding(4, "Einzelpreis"),
+					new ifListView.SubItemBinding(5, "Einzelsumme"),
+					new ifListView.SubItemBinding(6, "ZType")
+				}
+			);
+
+			if (DesignMode)
+			{
+				return;
+			}
+
+			StatusInfo.StatusRunning = false;
+
+			timerRead.Enabled = Settings.GetComputerSetting<bool>("dirs21.autoread");
             checkCallAutostart.Checked = Settings.GetComputerSetting<bool>("call.autostart");
 
             if (checkCallAutostart.Checked)
@@ -41,59 +99,6 @@ namespace HotelAddInApp
             }
 
             textStatus.Text = Settings.GetComputerSetting<string>("status");
-
-            listCall.Init();
-            listCall.Bindings.AddRange(
-                new ifListView.ListViewBinding[] {
-                    new ifListView.SubItemBinding(0, "ExtensionLine"),
-                    new ifListView.SubItemBinding(1, "DateTime"),
-                    new ifListView.SubItemBinding(2, "CallNumber"),
-                    new ifListView.SubItemBinding(3, "Duration"),
-                    new ifListView.SubItemBinding(4, "Units")
-                }
-            );
-
-            listBooking.Init();
-            listBooking.Bindings.AddRange(
-                new ifListView.ListViewBinding[] {
-                    new ifListView.SubItemBinding(0, "BID"),
-                    new ifListView.SubItemBinding(1, o=> ((Booking)o).Vorname + " " + ((Booking)o).Name),
-                    new ifListView.SubItemBinding(2, "Firma"),
-                    new ifListView.SubItemBinding(3, "Buchungsdatum"),
-                    new ifListView.PropertyBinding("Checked", "Entered")
-                }
-            );
-
-            listBookingData.Init();
-            listBookingData.Bindings.AddRange(
-                new ifListView.ListViewBinding[] {
-                    new ifListView.SubItemBinding(0, "Key"),
-                    new ifListView.SubItemBinding(1, "Value")
-                }
-            );
-
-            listBookingAddOns.Init();
-            listBookingAddOns.Bindings.AddRange(
-                new ifListView.ListViewBinding[] {
-                    new ifListView.SubItemBinding(0, "ZLAnzahl"),
-                    new ifListView.SubItemBinding(1, "ZLText"),
-                    new ifListView.SubItemBinding(2, "ZLEPreis"),
-                    new ifListView.SubItemBinding(3, "ZLSumme")
-                }
-            );
-
-            listBookingDetails.Init();
-            listBookingDetails.Bindings.AddRange(
-                new ifListView.ListViewBinding[] {
-                    new ifListView.SubItemBinding(0, o => ((Booking.BookingDetail)o).Anreise.ToString("dd.MM.yyy")),
-                    new ifListView.SubItemBinding(1, o => ((Booking.BookingDetail)o).Abreise.ToString("dd.MM.yyy")),
-                    new ifListView.SubItemBinding(2, "ZTypBezeichnung"),
-                    new ifListView.SubItemBinding(3, "Anzahl"),
-                    new ifListView.SubItemBinding(4, "Einzelpreis"),
-                    new ifListView.SubItemBinding(5, "Einzelsumme"),
-                    new ifListView.SubItemBinding(6, "ZType")
-                }
-            );
 
             this.RefreshCallList();
         }

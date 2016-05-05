@@ -3,16 +3,24 @@ Imports Microsoft.Win32
 
 Public Class Settings
 #Region "Private Member"
-    Private Shared Function _createKey() As RegistryKey
-        Return Registry.CurrentUser.CreateSubKey("Software\\Ioniel Network\\HotelAddIn\\", RegistryKeyPermissionCheck.ReadWriteSubTree)
-    End Function
+	Private Shared Function _createKey() As RegistryKey
+		Return Registry.CurrentUser.CreateSubKey("Software\\Ioniel Network\\HotelAddIn\\", RegistryKeyPermissionCheck.ReadWriteSubTree)
+	End Function
 
-	Private Shared Function _getValue(ByVal key As String) As Object
+	Private Shared Function _getValue(Of T)(ByVal key As String) As T
 		Dim key2 = Registry.CurrentUser.OpenSubKey("Software\\Ioniel Network\\HotelAddIn\\", False)
 
 		If key2 Is Nothing Then key2 = _createKey()
 
-		Return key2.GetValue(key)
+		Dim value As Object = key2.GetValue(key)
+
+		If value IsNot Nothing And TypeOf value IsNot T Then
+			key2.DeleteValue(key)
+			Dim genericValue As T = Nothing
+			Return genericValue
+		End If
+
+		Return value
 	End Function
 
 	Private Shared Sub _setValue(ByVal key As String, ByVal value As Object)
@@ -27,8 +35,8 @@ Public Class Settings
 #Region "Fields"
 	Public Shared Property PathBonBon() As String
         Get
-            Return _getValue("PathBonBon")
-        End Get
+			Return _getValue(Of String)("PathBonBon")
+		End Get
         Set(ByVal value As String)
             _setValue("PathBonBon", value)
         End Set
@@ -36,8 +44,8 @@ Public Class Settings
 
     Public Shared Property PathSQLite() As String
         Get
-            Return _getValue("PathSQLite")
-        End Get
+			Return _getValue(Of String)("PathSQLite")
+		End Get
         Set(ByVal value As String)
             _setValue("PathSQLite", value)
         End Set
@@ -45,9 +53,9 @@ Public Class Settings
 
     Public Shared Property PathData() As String
         Get
-            Dim path = _getValue("PathData")
+			Dim path = _getValue(Of String)("PathData")
 
-            If String.IsNullOrEmpty(path) Then path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
+			If String.IsNullOrEmpty(path) Then path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
 
             Return path
         End Get
@@ -75,8 +83,8 @@ Public Class Settings
 #Region "Fields - CubeSQL"
     Public Shared Property CubeSqlHost() As String
         Get
-            Return _getValue("CubeSqlHost")
-        End Get
+			Return _getValue(Of String)("CubeSqlHost")
+		End Get
         Set(ByVal value As String)
             _setValue("CubeSqlHost", value)
         End Set
@@ -84,8 +92,8 @@ Public Class Settings
 
     Public Shared Property CubeSqlPort() As Integer
         Get
-            Return _getValue("CubeSqlPort")
-        End Get
+			Return _getValue(Of Integer)("CubeSqlPort")
+		End Get
         Set(ByVal value As Integer)
             _setValue("CubeSqlPort", value)
         End Set
@@ -93,8 +101,8 @@ Public Class Settings
 
     Public Shared Property CubeSqlUsername() As String
         Get
-            Return _getValue("CubeSqlUsername")
-        End Get
+			Return _getValue(Of String)("CubeSqlUsername")
+		End Get
         Set(ByVal value As String)
             _setValue("CubeSqlUsername", value)
         End Set
@@ -102,8 +110,8 @@ Public Class Settings
 
     Public Shared Property CubeSqlPassword() As String
         Get
-            Return _getValue("CubeSqlPassword")
-        End Get
+			Return _getValue(Of String)("CubeSqlPassword")
+		End Get
         Set(ByVal value As String)
             _setValue("CubeSqlPassword", value)
         End Set

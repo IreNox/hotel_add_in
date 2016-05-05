@@ -790,7 +790,6 @@
             // 
             // menuConfigCubeSQL
             // 
-            this.menuConfigCubeSQL.Enabled = false;
             this.menuConfigCubeSQL.Name = "menuConfigCubeSQL";
             this.menuConfigCubeSQL.Size = new System.Drawing.Size(268, 22);
             this.menuConfigCubeSQL.Text = "CubeSQL-Einstellungen";
