@@ -57,26 +57,32 @@ Public Class CubeSqlAddIn
     End Function
 
     Public Function Query(ByVal inSQL As String) As DataTable
-        dbCmd.CommandText = inSQL
+		dbCmd.CommandText = inSQL
 
-        Try
-            dbConn.Open()
+		Dim isOpen As Boolean = False
+		Try
+			dbConn.Open()
+			isOpen = True
 
-            Dim ds As New DataSet()
-            ds.EnforceConstraints = False
+			Dim ds As New DataSet()
+			ds.EnforceConstraints = False
 
-            Dim table As New DataTable()
-            ds.Tables.Add(table)
-            table.Load(dbCmd.ExecuteReader())
+			Dim table As New DataTable()
+			ds.Tables.Add(table)
+			table.Load(dbCmd.ExecuteReader())
 
-            dbConn.Close()
+			dbConn.Close()
+			isOpen = False
 
-            Return table
-        Catch e As Exception
-            MessageBox.Show(e.Message)
-            Return New DataTable()
-        End Try
-    End Function
+			Return table
+		Catch e As Exception
+			MessageBox.Show(e.Message)
+			If isOpen Then
+				dbConn.Close()
+			End If
+			Return New DataTable()
+		End Try
+	End Function
 
     Public Function CreateObjectSql(ByVal where As String, ByVal ParamArray fields As String()) As DataTable
         Dim str As New StringBuilder()
