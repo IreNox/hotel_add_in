@@ -380,7 +380,7 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HotelAddIn"
-        "ProductCode" = "8:{7E147BE2-84DB-45C7-9316-DDB9D158B5FC}"
+        "ProductCode" = "8:{A5E43EBE-97DA-414E-B563-8EA6DE479DAE}"
         "PackageCode" = "8:{5F756426-6B33-492F-BB95-4913D6B4703E}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
         "AspNetVersion" = "8:4.0.30319.0"
@@ -388,7 +388,7 @@
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.7.2"
+        "ProductVersion" = "8:5.7.3"
         "Manufacturer" = "8:Ioniel Network"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
