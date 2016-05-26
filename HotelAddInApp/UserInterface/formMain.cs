@@ -193,7 +193,7 @@ namespace HotelAddInApp
             form.Dispose();
 
             Program.AddIn.Dispose();
-            Program.AddIn = new LodgitAddIn();
+            Program.AddIn = new CubeSqlAddIn();
         }
 
         private void menuConfigCubeSQL_Click(object sender, EventArgs e)
@@ -204,7 +204,7 @@ namespace HotelAddInApp
             form.Dispose();
 
             Program.AddIn.Dispose();
-            Program.AddIn = new LodgitAddIn();
+            Program.AddIn = new CubeSqlAddIn();
         }
 
         private void menuConfigDirs21_Click(object sender, EventArgs e)
@@ -289,9 +289,12 @@ namespace HotelAddInApp
 
                 if (result == DialogResult.Yes)
                 {
+                    int i = 0;
+
                     var indices = listCall.SelectedIndices.Cast<int>();
-                    var list = listCall.Items.Cast<ListViewItem>().Where(i => indices.Contains(i.Index)).Select(i => (Call)i.Tag);
+                    //var list = ((List<object>)listCall.DataSource).Cast<Call>().Where(i => indices.Contains(i.Index)).Select(i => (Call)i.Tag);
                     var all = Call.ReadAll();
+                    var list = all.Where(c => indices.Contains(i++)).ToArray();
 
                     foreach (var call in list)
                     {
@@ -467,7 +470,7 @@ namespace HotelAddInApp
         #endregion
 
         #region Properties
-        public LodgitAddIn AddIn
+        public CubeSqlAddIn AddIn
         {
             get { return ucHotelAddIn1.AddIn; }
         }

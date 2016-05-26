@@ -21,26 +21,38 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
-        "OwnerKey" = "8:_902F557658371772E9087FB5D621C26D"
+        "MsmKey" = "8:_3528A0372C86A4A3054DC016535C0ABA"
+        "OwnerKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
+        "MsmKey" = "8:_3528A0372C86A4A3054DC016535C0ABA"
         "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
+        "MsmKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
         "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
+        "OwnerKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
+        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
+        "OwnerKey" = "8:_8FEC43E4BDEB475A8000F1151693DE9D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,13 +88,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_902F557658371772E9087FB5D621C26D"
+        "OwnerKey" = "8:_39B4D53DF38387E0CF2E5291FA33E3BC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_89650A4EEBE9A8690B271D3B83A12597"
+        "OwnerKey" = "8:_7E4A157DA09D8C22261F46965AD4F19C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -182,7 +194,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729     "
+                "FrameworkVersion" = "8:3.5.30729"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -210,20 +222,40 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_89650A4EEBE9A8690B271D3B83A12597"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3528A0372C86A4A3054DC016535C0ABA"
+            {
+            "SourcePath" = "8:HotelAddIn.tlb"
+            "TargetName" = "8:HotelAddIn.tlb"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:2"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_39B4D53DF38387E0CF2E5291FA33E3BC"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:HotelAddIn, Version=5.7.1.0, Culture=neutral, PublicKeyToken=2d34470cdb0fab2f, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_89650A4EEBE9A8690B271D3B83A12597"
+                    "_39B4D53DF38387E0CF2E5291FA33E3BC"
                     {
-                    "Name" = "8:System.Data.SQLite.dll"
+                    "Name" = "8:HotelAddIn.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:System.Data.SQLite.dll"
+            "SourcePath" = "8:HotelAddIn.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
@@ -241,20 +273,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_902F557658371772E9087FB5D621C26D"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7E4A157DA09D8C22261F46965AD4F19C"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:HotelAddIn, Version=5.6.0.0, Culture=neutral, PublicKeyToken=2d34470cdb0fab2f, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_902F557658371772E9087FB5D621C26D"
+                    "_7E4A157DA09D8C22261F46965AD4F19C"
                     {
-                    "Name" = "8:HotelAddIn.dll"
+                    "Name" = "8:System.Data.SQLite.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:HotelAddIn.dll"
+            "SourcePath" = "8:System.Data.SQLite.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
@@ -348,15 +380,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HotelAddIn"
-        "ProductCode" = "8:{2082165A-92ED-4432-B79D-C9F0788B7B56}"
-        "PackageCode" = "8:{20E6D620-5DE9-488E-A445-6549533D066C}"
+        "ProductCode" = "8:{7E147BE2-84DB-45C7-9316-DDB9D158B5FC}"
+        "PackageCode" = "8:{5F756426-6B33-492F-BB95-4913D6B4703E}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.7.0"
+        "ProductVersion" = "8:5.7.2"
         "Manufacturer" = "8:Ioniel Network"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

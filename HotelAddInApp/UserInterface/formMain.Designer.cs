@@ -779,68 +779,68 @@
             this.menuConfigHotels,
             this.menuConfigDebug});
             this.menuConfig.Name = "menuConfig";
-            this.menuConfig.Size = new System.Drawing.Size(269, 224);
+            this.menuConfig.Size = new System.Drawing.Size(248, 202);
             // 
             // menuConfigAddIn
             // 
             this.menuConfigAddIn.Name = "menuConfigAddIn";
-            this.menuConfigAddIn.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigAddIn.Size = new System.Drawing.Size(247, 22);
             this.menuConfigAddIn.Text = "AddIn-Einstellungen";
             this.menuConfigAddIn.Click += new System.EventHandler(this.menuConfigAddIn_Click);
             // 
             // menuConfigCubeSQL
             // 
             this.menuConfigCubeSQL.Name = "menuConfigCubeSQL";
-            this.menuConfigCubeSQL.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigCubeSQL.Size = new System.Drawing.Size(247, 22);
             this.menuConfigCubeSQL.Text = "CubeSQL-Einstellungen";
             this.menuConfigCubeSQL.Click += new System.EventHandler(this.menuConfigCubeSQL_Click);
             // 
             // menuConfigDirs21
             // 
             this.menuConfigDirs21.Name = "menuConfigDirs21";
-            this.menuConfigDirs21.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigDirs21.Size = new System.Drawing.Size(247, 22);
             this.menuConfigDirs21.Text = "Dirs21-Einstellungen";
             this.menuConfigDirs21.Click += new System.EventHandler(this.menuConfigDirs21_Click);
             // 
             // menuConfigRooms
             // 
             this.menuConfigRooms.Name = "menuConfigRooms";
-            this.menuConfigRooms.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigRooms.Size = new System.Drawing.Size(247, 22);
             this.menuConfigRooms.Text = "Zimmertypen-Einstellungen";
             this.menuConfigRooms.Click += new System.EventHandler(this.menuConfigRooms_Click);
             // 
             // menuConfigCallWatcher
             // 
             this.menuConfigCallWatcher.Name = "menuConfigCallWatcher";
-            this.menuConfigCallWatcher.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigCallWatcher.Size = new System.Drawing.Size(247, 22);
             this.menuConfigCallWatcher.Text = "Telefonüberwachungs-Einstellungen";
             this.menuConfigCallWatcher.Click += new System.EventHandler(this.menuConfigCallWatcher_Click);
             // 
             // menuConfigCallNumbers
             // 
             this.menuConfigCallNumbers.Name = "menuConfigCallNumbers";
-            this.menuConfigCallNumbers.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigCallNumbers.Size = new System.Drawing.Size(247, 22);
             this.menuConfigCallNumbers.Text = "Zimmertelefon-Einstellungen";
             this.menuConfigCallNumbers.Click += new System.EventHandler(this.menuConfigCallNumbers_Click);
             // 
             // menuConfigGastware
             // 
             this.menuConfigGastware.Name = "menuConfigGastware";
-            this.menuConfigGastware.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigGastware.Size = new System.Drawing.Size(247, 22);
             this.menuConfigGastware.Text = "Gastware-Schnittstelle";
             this.menuConfigGastware.Click += new System.EventHandler(this.menuConfigGastware_Click);
             // 
             // menuConfigHotels
             // 
             this.menuConfigHotels.Name = "menuConfigHotels";
-            this.menuConfigHotels.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigHotels.Size = new System.Drawing.Size(247, 22);
             this.menuConfigHotels.Text = "Hotels einstellen";
             this.menuConfigHotels.Click += new System.EventHandler(this.menuConfigHotels_Click);
             // 
             // menuConfigDebug
             // 
             this.menuConfigDebug.Name = "menuConfigDebug";
-            this.menuConfigDebug.Size = new System.Drawing.Size(268, 22);
+            this.menuConfigDebug.Size = new System.Drawing.Size(247, 22);
             this.menuConfigDebug.Text = "Debug-Konsole";
             this.menuConfigDebug.Click += new System.EventHandler(this.menuConfigDebug_Click);
             // 

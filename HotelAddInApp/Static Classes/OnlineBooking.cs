@@ -40,7 +40,7 @@ namespace HotelAddInApp
 
             if (stream.BaseStream.Length == 0)
             {
-                stream.WriteLine("Salutation;Title;FirstName;LastName;Organisation;IsACompany;AdresseHome;CityHome;ZipHome;CountryHome;FederalState;Birthday (YYYY-MM-DD);TelHome;FaxHome;MailHome;Homepage;Notiz;CountVisits;");
+                stream.WriteLine("Salutation;Title;FirstName;LastName;Organisation;IsACompany;AdresseHome;CityHome;ZipHome;CountryHome;FederalState;Birthday (YYYY-MM-DD);TelHome;FaxHome;MailHome;Homepage;Notiz;CountVisits");
             }
 
             return stream;

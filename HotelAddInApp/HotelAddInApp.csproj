@@ -85,9 +85,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
