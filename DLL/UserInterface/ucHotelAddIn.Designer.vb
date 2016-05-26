@@ -31,8 +31,8 @@ Partial Class ucHotelAddIn
         Me.cmdGaeste = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.dateSelector = New System.Windows.Forms.DateTimePicker()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.cmdJahr = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
@@ -155,6 +155,18 @@ Partial Class ucHotelAddIn
         Me.dateSelector.Size = New System.Drawing.Size(190, 20)
         Me.dateSelector.TabIndex = 38
         '
+        'cmdJahr
+        '
+        Me.cmdJahr.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cmdJahr.Location = New System.Drawing.Point(389, 61)
+        Me.cmdJahr.Name = "cmdJahr"
+        Me.cmdJahr.Size = New System.Drawing.Size(186, 52)
+        Me.cmdJahr.TabIndex = 39
+        Me.cmdJahr.Text = "Statistik"
+        Me.cmdJahr.UseVisualStyleBackColor = True
+        '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -171,18 +183,6 @@ Partial Class ucHotelAddIn
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(584, 448)
         Me.TableLayoutPanel2.TabIndex = 42
-        '
-        'cmdJahr
-        '
-        Me.cmdJahr.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cmdJahr.Location = New System.Drawing.Point(389, 61)
-        Me.cmdJahr.Name = "cmdJahr"
-        Me.cmdJahr.Size = New System.Drawing.Size(186, 52)
-        Me.cmdJahr.TabIndex = 39
-        Me.cmdJahr.Text = "Statistik"
-        Me.cmdJahr.UseVisualStyleBackColor = True
         '
         'ucHotelAddIn
         '

@@ -4,7 +4,7 @@ Imports Microsoft.Win32
 
 Public Class ucHotelAddIn
 #Region "Vars"
-    Private _addin As New LodgitAddIn
+    Private _addin As New CubeSqlAddIn
 #End Region
 
 #Region "Init"
@@ -49,7 +49,7 @@ Public Class ucHotelAddIn
 #End Region
 
 #Region "Properties"
-    Public ReadOnly Property AddIn() As LodgitAddIn
+    Public ReadOnly Property AddIn() As CubeSqlAddIn
         Get
             Return _addin
         End Get

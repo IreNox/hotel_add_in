@@ -14,7 +14,7 @@ namespace HotelAddInApp
         #region Vars
         private static formMain _form;
 
-        private static LodgitAddIn _addIn;
+        private static CubeSqlAddIn _addIn;
         #endregion
 
         #region Private Member - IPC
@@ -110,7 +110,7 @@ namespace HotelAddInApp
             get { return _form; }
         }
 
-        public static LodgitAddIn AddIn
+        public static CubeSqlAddIn AddIn
         {
             get { return _addIn; }
             set { _addIn = value; }
