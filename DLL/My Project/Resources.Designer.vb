@@ -62,16 +62,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to SELECT
-        '''	booking.rowid		AS booking_id,
-        '''	date(booking.BU_DATUM_VON)	AS booking_arrival,
-        '''	date(booking.BU_DATUM_BIS)	AS booking_depature,
-        '''	booking.BU_PERS_TOTAL	AS booking_persons,
-        '''	room.ME_BEZ		AS room_name,
-        '''	(customer.KU_VNAME || &quot; &quot; || customer.KU_NAME || &quot; &quot; || customer.KU_FIRMA) AS customer_name,
-        '''	(CASE
-        '''		WHEN booking.BU_GRUPPE != 0
-        '''	THEN
-        '''		(SELECT (customer2.KU_VNAME || &quot; &quot; || customer2.KU_NAME || &quot; &quot; || customer2.KU_FIRMA) FROM b_buchungen as booking2, kunden as customer2 WHERE booking2.rowid  [rest of string was truncated]&quot;;.
+        '''                booking.rowid                  AS booking_id,
+        '''                date(booking.BU_DATUM_VON)           AS booking_arrival,
+        '''                date(booking.BU_DATUM_BIS)              AS booking_depature,
+        '''                booking.BU_PERS_TOTAL           AS booking_persons,
+        '''                room.ME_BEZ                  AS room_name,
+        '''                (customer.KU_VNAME || &quot; &quot; || customer.KU_NAME || &quot; &quot; || customer.KU_FIRMA) AS customer_name,
+        '''                (CASE
+        '''                            [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property queryArr() As String
             Get

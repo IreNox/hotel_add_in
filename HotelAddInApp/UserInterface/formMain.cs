@@ -1,10 +1,10 @@
-﻿using System;
-using System.Linq;
-using System.Drawing;
-using System.Windows.Forms;
+﻿using HotelAddIn;
 using System.Collections.Generic;
-using HotelAddIn;
+using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Windows.Forms;
+using System;
 
 namespace HotelAddInApp
 {
@@ -358,7 +358,7 @@ namespace HotelAddInApp
         {
             string filename = Settings.GetSetting<string>("dirs21.output");
 
-            if (System.IO.File.Exists(filename))
+            if (File.Exists(filename))
             {
                 DialogResult result = MessageBox.Show(
                     this,
@@ -368,10 +368,20 @@ namespace HotelAddInApp
                     MessageBoxIcon.Question
                 );
 
-                if (result == DialogResult.Yes)
-                {
-                    System.IO.File.Delete(filename);
-                }
+				if (result == DialogResult.Yes)
+				{
+					File.Delete(filename);
+					if (File.Exists(filename))
+					{
+						MessageBox.Show(
+							this,
+							"Datei konnte nicht gelöscht werden!",
+							"Online Buchungen",
+							MessageBoxButtons.OK,
+							MessageBoxIcon.Error
+						);
+					}
+				}
             }
             else
             {
