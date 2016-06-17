@@ -46,13 +46,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "OwnerKey" = "8:_EFC259915D60E72D677A63BFEBA657EE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EFC259915D60E72D677A63BFEBA657EE"
+        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -152,7 +152,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729 "
+                "FrameworkVersion" = "8:3.5.30729  "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -207,11 +207,6 @@
             "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_EFC259915D60E72D677A63BFEBA657EE"
-                    {
-                    "Name" = "8:System.Data.SQLite.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Data.SQLite.dll"
             "TargetName" = "8:"
@@ -287,15 +282,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HotelAddIn"
-        "ProductCode" = "8:{D0A256FD-7427-408B-AE43-F0453F814249}"
-        "PackageCode" = "8:{2EF93C02-6406-46EF-9DDB-40098B4751FC}"
+        "ProductCode" = "8:{4629F633-35F3-4FD4-9660-EBDB5BA54496}"
+        "PackageCode" = "8:{CEE6C20C-43C1-4DF1-994B-4D70EE3D6A9E}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:5.8.0"
+        "ProductVersion" = "8:6.0.0"
         "Manufacturer" = "8:Ioniel Network"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
