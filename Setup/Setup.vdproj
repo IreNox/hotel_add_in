@@ -46,13 +46,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EFC259915D60E72D677A63BFEBA657EE"
+        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "OwnerKey" = "8:_EFC259915D60E72D677A63BFEBA657EE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -152,7 +152,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729  "
+                "FrameworkVersion" = "8:3.5.30729   "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -282,15 +282,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HotelAddIn"
-        "ProductCode" = "8:{4629F633-35F3-4FD4-9660-EBDB5BA54496}"
-        "PackageCode" = "8:{CEE6C20C-43C1-4DF1-994B-4D70EE3D6A9E}"
+        "ProductCode" = "8:{ED56CBA0-36EA-4271-A09E-43F1A70EE82B}"
+        "PackageCode" = "8:{7392D60B-C981-4B02-9373-3EEF084556ED}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:6.0.0"
+        "ProductVersion" = "8:6.0.1"
         "Manufacturer" = "8:Ioniel Network"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
