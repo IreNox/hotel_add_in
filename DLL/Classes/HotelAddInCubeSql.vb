@@ -43,16 +43,16 @@ Public Class CubeSqlAddIn
 
 #Region "Private Member"
     Private Function _buildConnectionString() As String
-        Return String.Format( _
-            "driver={{cubeSQL ODBC}};database={4};server={0};uid={2};pwd={3};", _
-            Settings.CubeSqlHost, _
-            Settings.CubeSqlPort, _
-            Settings.CubeSqlUsername, _
-            Settings.CubeSqlPassword, _
-            Path.GetFileName(Settings.PathSQLite) _
+        Return String.Format(
+            "driver={{cubeSQL ODBC}};database={4};server={0};port={1};uid={2};pwd={3};",
+            Settings.CubeSqlHost,
+            Settings.CubeSqlPort,
+            Settings.CubeSqlUsername,
+            Settings.CubeSqlPassword,
+            Path.GetFileName(Settings.PathSQLite)
         )
         '"driver={{cubeSQL ODBC}};database={4};server={0};uid={2};pwd={3};", _
-
+        'database=Lodgit Database.lxdb;server=Hauptserver;port=4435;uid=Hotel
         '"Host={0};Port={1};Username={2};Password={3};Database={4}", _
     End Function
 

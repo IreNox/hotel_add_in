@@ -14,7 +14,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("Ioniel Network")> 
 <Assembly: AssemblyProduct("HotelAddIn")>
-<Assembly: AssemblyCopyright("Copyright © Ioniel Network 2016")>
+<Assembly: AssemblyCopyright("Copyright © Ioniel Network 2019")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(True)> 
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' übernehmen, indem Sie "*" eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("6.0.1.0")>
-<Assembly: AssemblyFileVersion("6.0.1.0")>
+<Assembly: AssemblyVersion("6.0.2.0")>
+<Assembly: AssemblyFileVersion("6.0.2.0")>
 
 <Assembly: NeutralResourcesLanguageAttribute("de-DE")> 

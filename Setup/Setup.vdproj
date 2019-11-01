@@ -21,6 +21,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_22906992BAD800C7D4E0809CB565CF9F"
+        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4A907B6C5960CCB6A193478BDDB1A0AB"
+        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -33,7 +45,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EFC259915D60E72D677A63BFEBA657EE"
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -46,13 +58,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EFC259915D60E72D677A63BFEBA657EE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BBF2C2F82FAF45E89599FC71C86F66A3"
+        "OwnerKey" = "8:_4A907B6C5960CCB6A193478BDDB1A0AB"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -152,7 +158,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729    "
+                "FrameworkVersion" = "8:3.5.30729     "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -180,6 +186,57 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_22906992BAD800C7D4E0809CB565CF9F"
+            {
+            "SourcePath" = "8:HotelAddIn.tlb"
+            "TargetName" = "8:HotelAddIn.tlb"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:2"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4A907B6C5960CCB6A193478BDDB1A0AB"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_4A907B6C5960CCB6A193478BDDB1A0AB"
+                    {
+                    "Name" = "8:System.Data.SQLite.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Data.SQLite.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AEE2E9EAB03749A3A5064CFA85A0F7E5"
             {
             "SourcePath" = "8:setup.jpg"
@@ -198,32 +255,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EFC259915D60E72D677A63BFEBA657EE"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:System.Data.SQLite.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_2BAEC78679F14DE88DEE4016463308C0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -282,15 +313,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:HotelAddIn"
-        "ProductCode" = "8:{ED56CBA0-36EA-4271-A09E-43F1A70EE82B}"
-        "PackageCode" = "8:{7392D60B-C981-4B02-9373-3EEF084556ED}"
+        "ProductCode" = "8:{8BF06237-2D42-4C2A-AA04-BCE893DADC0B}"
+        "PackageCode" = "8:{E65144F0-F6E9-40AA-807F-0563AAF7AEE9}"
         "UpgradeCode" = "8:{67D90C0F-71E3-4E91-86A9-EF3AC7B26F08}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:6.0.1"
+        "ProductVersion" = "8:6.0.2"
         "Manufacturer" = "8:Ioniel Network"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
