@@ -12,8 +12,6 @@ namespace HotelAddInApp
     {
         #region Vars
         private Booking _booking;
-
-        private bool _running = true;
         #endregion
 
         #region Init
@@ -131,12 +129,6 @@ namespace HotelAddInApp
             tabControl1.SelectedTab = pageOnlineBooking;
         }
 
-        private void formMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            e.Cancel = _running;
-            this.Visible = false;
-        }
-
         private void cmdExit_Click(object sender, EventArgs e)
         {
 #if PHONE
@@ -145,7 +137,6 @@ namespace HotelAddInApp
 
             Settings.SetComputerSetting("status", textStatus.Text);
 
-            _running = false;
             this.Close();
         }
         #endregion
@@ -356,7 +347,7 @@ namespace HotelAddInApp
         #region Events - Booking
         private void buttonOnlineDelete_Click(object sender, EventArgs e)
         {
-            string filename = Settings.GetSetting<string>("dirs21.output");
+            string filename = Settings.GetComputerSetting<string>("dirs21.output");
 
             if (File.Exists(filename))
             {
@@ -443,16 +434,22 @@ namespace HotelAddInApp
 
                 if (result == DialogResult.Yes)
                 {
-                    var indices = listBooking.SelectedIndices.Cast<int>();
-                    var list = listBooking.Items.Cast<ListViewItem>().Where(i => indices.Contains(i.Index)).Select(i => (Booking)i.Tag);
                     var all = Booking.ReadAll();
 
-                    foreach (var bk in list)
+                    var indices = listBooking.SelectedIndices.Cast<int>();
+                    List<Booking> toRemove = new List<Booking>();
+                    foreach (int index in indices)
                     {
-                        all.Remove(bk);
+                        toRemove.Add(all[index]);
+                    }
+
+                    foreach (Booking booking in toRemove)
+                    {
+                        all.Remove(booking);
                     }
 
                     Booking.SaveAll(all);
+                    listBooking.SelectedIndices.Clear();
                     listBooking.DataSource = all;
                 }
             }

@@ -105,7 +105,6 @@
             this.menuConfigGastware = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfigHotels = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfigDebug = new System.Windows.Forms.ToolStripMenuItem();
-            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmdConfig = new System.Windows.Forms.Button();
             this.timerRead = new System.Windows.Forms.Timer(this.components);
             this.groupStatus.SuspendLayout();
@@ -133,8 +132,8 @@
             // 
             // progressStatus
             // 
-            this.progressStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.progressStatus.Location = new System.Drawing.Point(6, 42);
             this.progressStatus.Name = "progressStatus";
             this.progressStatus.Size = new System.Drawing.Size(608, 23);
@@ -207,9 +206,9 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.pageQuery);
             this.tabControl1.Controls.Add(this.pageOnlineBooking);
             this.tabControl1.Controls.Add(this.pageCallWatcher);
@@ -585,7 +584,7 @@
             this.label7.Size = new System.Drawing.Size(161, 39);
             this.label7.TabIndex = 2;
             this.label7.Text = "- Such-Feld ein- und ausblenden\r\n- Liste Aktualisieren\r\n- Ausgewählte Elemente lö" +
-                "schen";
+    "schen";
             // 
             // label6
             // 
@@ -630,8 +629,8 @@
             // 
             // textCallSearch
             // 
-            this.textCallSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textCallSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textCallSearch.Location = new System.Drawing.Point(56, 1);
             this.textCallSearch.Name = "textCallSearch";
             this.textCallSearch.Size = new System.Drawing.Size(610, 20);
@@ -698,8 +697,8 @@
             // 
             // textCallStatus
             // 
-            this.textCallStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textCallStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textCallStatus.Location = new System.Drawing.Point(52, 44);
             this.textCallStatus.Name = "textCallStatus";
             this.textCallStatus.ReadOnly = true;
@@ -779,78 +778,70 @@
             this.menuConfigHotels,
             this.menuConfigDebug});
             this.menuConfig.Name = "menuConfig";
-            this.menuConfig.Size = new System.Drawing.Size(248, 202);
+            this.menuConfig.Size = new System.Drawing.Size(269, 202);
             // 
             // menuConfigAddIn
             // 
             this.menuConfigAddIn.Name = "menuConfigAddIn";
-            this.menuConfigAddIn.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigAddIn.Size = new System.Drawing.Size(268, 22);
             this.menuConfigAddIn.Text = "AddIn-Einstellungen";
             this.menuConfigAddIn.Click += new System.EventHandler(this.menuConfigAddIn_Click);
             // 
             // menuConfigCubeSQL
             // 
             this.menuConfigCubeSQL.Name = "menuConfigCubeSQL";
-            this.menuConfigCubeSQL.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigCubeSQL.Size = new System.Drawing.Size(268, 22);
             this.menuConfigCubeSQL.Text = "CubeSQL-Einstellungen";
             this.menuConfigCubeSQL.Click += new System.EventHandler(this.menuConfigCubeSQL_Click);
             // 
             // menuConfigDirs21
             // 
             this.menuConfigDirs21.Name = "menuConfigDirs21";
-            this.menuConfigDirs21.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigDirs21.Size = new System.Drawing.Size(268, 22);
             this.menuConfigDirs21.Text = "Dirs21-Einstellungen";
             this.menuConfigDirs21.Click += new System.EventHandler(this.menuConfigDirs21_Click);
             // 
             // menuConfigRooms
             // 
             this.menuConfigRooms.Name = "menuConfigRooms";
-            this.menuConfigRooms.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigRooms.Size = new System.Drawing.Size(268, 22);
             this.menuConfigRooms.Text = "Zimmertypen-Einstellungen";
             this.menuConfigRooms.Click += new System.EventHandler(this.menuConfigRooms_Click);
             // 
             // menuConfigCallWatcher
             // 
             this.menuConfigCallWatcher.Name = "menuConfigCallWatcher";
-            this.menuConfigCallWatcher.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigCallWatcher.Size = new System.Drawing.Size(268, 22);
             this.menuConfigCallWatcher.Text = "Telefonüberwachungs-Einstellungen";
             this.menuConfigCallWatcher.Click += new System.EventHandler(this.menuConfigCallWatcher_Click);
             // 
             // menuConfigCallNumbers
             // 
             this.menuConfigCallNumbers.Name = "menuConfigCallNumbers";
-            this.menuConfigCallNumbers.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigCallNumbers.Size = new System.Drawing.Size(268, 22);
             this.menuConfigCallNumbers.Text = "Zimmertelefon-Einstellungen";
             this.menuConfigCallNumbers.Click += new System.EventHandler(this.menuConfigCallNumbers_Click);
             // 
             // menuConfigGastware
             // 
             this.menuConfigGastware.Name = "menuConfigGastware";
-            this.menuConfigGastware.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigGastware.Size = new System.Drawing.Size(268, 22);
             this.menuConfigGastware.Text = "Gastware-Schnittstelle";
             this.menuConfigGastware.Click += new System.EventHandler(this.menuConfigGastware_Click);
             // 
             // menuConfigHotels
             // 
             this.menuConfigHotels.Name = "menuConfigHotels";
-            this.menuConfigHotels.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigHotels.Size = new System.Drawing.Size(268, 22);
             this.menuConfigHotels.Text = "Hotels einstellen";
             this.menuConfigHotels.Click += new System.EventHandler(this.menuConfigHotels_Click);
             // 
             // menuConfigDebug
             // 
             this.menuConfigDebug.Name = "menuConfigDebug";
-            this.menuConfigDebug.Size = new System.Drawing.Size(247, 22);
+            this.menuConfigDebug.Size = new System.Drawing.Size(268, 22);
             this.menuConfigDebug.Text = "Debug-Konsole";
             this.menuConfigDebug.Click += new System.EventHandler(this.menuConfigDebug_Click);
-            // 
-            // notifyIcon
-            // 
-            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "Lodgit Schnittstelle";
-            this.notifyIcon.Visible = true;
-            this.notifyIcon.BalloonTipClicked += new System.EventHandler(this.notifyIcon_BalloonTipClicked);
-            this.notifyIcon.Click += new System.EventHandler(this.notifyIcon_Click);
             // 
             // cmdConfig
             // 
@@ -880,7 +871,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formMain";
             this.Text = "Lodgit Online Buchungs Schnittstelle";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formMain_FormClosing);
             this.Load += new System.EventHandler(this.formMain_Load);
             this.groupStatus.ResumeLayout(false);
             this.groupStatus.PerformLayout();
@@ -937,7 +927,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.NotifyIcon notifyIcon;
         internal System.Windows.Forms.TextBox textCallStatus;
         private System.Windows.Forms.CheckBox checkCallAutostart;
         private System.Windows.Forms.ToolStripMenuItem menuConfigCallNumbers;

@@ -229,6 +229,28 @@ Public Class CubeSqlAddIn
 
         Return ret
     End Function
+
+    Public Function RsAnzahlGästeBleiben(ByVal Datum As Date) As Integer
+        Dim ret As Integer = 0
+        Dim table = Me.Query("SELECT COUNT(*) FROM b_buchungen WHERE date([BU_DATUM_VON]) < date('" + Datum.ToString("yyyy-MM-dd") + "') AND date([BU_DATUM_BIS]) > date('" + Datum.ToString("yyyy-MM-dd") + "')")
+
+        ret = table.Rows(0)("COUNT(*)")
+
+        table.Dispose()
+
+        Return ret
+    End Function
+
+    Public Function RsAnzahlGästeAbreise(ByVal Datum As Date) As Integer
+        Dim ret As Integer = 0
+        Dim table = Me.Query("SELECT COUNT(*) FROM b_buchungen WHERE date([BU_DATUM_BIS]) = date('" + Datum.ToString("yyyy-MM-dd") + "')")
+
+        ret = table.Rows(0)("COUNT(*)")
+
+        table.Dispose()
+
+        Return ret
+    End Function
 #End Region
 
 #Region "RsArr*"

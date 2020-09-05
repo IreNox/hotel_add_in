@@ -67,9 +67,12 @@ Namespace My.Resources
         '''                date(booking.BU_DATUM_BIS)              AS booking_depature,
         '''                booking.BU_PERS_TOTAL           AS booking_persons,
         '''                room.ME_BEZ                  AS room_name,
-        '''                (customer.KU_VNAME || &quot; &quot; || customer.KU_NAME || &quot; &quot; || customer.KU_FIRMA) AS customer_name,
-        '''                (CASE
-        '''                            [rest of string was truncated]&quot;;.
+        '''				(CASE  
+        '''					WHEN customer.is_firma AND customer.KU_FIRMA != &quot;&quot;
+        '''				THEN
+        '''					customer.KU_FIRMA
+        '''				ELSE
+        '''					(customer.KU_VNAME || &quot; &quot; || customer.KU_ [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property queryArr() As String
             Get

@@ -46,6 +46,14 @@ Public Class ucHotelAddIn
 
         txtAnzeige.Text = text
     End Sub
+
+    Private Sub cmdBleiben_Click(sender As Object, e As EventArgs) Handles cmdBleiben.Click
+        txtAnzeige.Text = "Gäste bleiben: " + _addin.RsAnzahlGästeBleiben(dateSelector.Value).ToString()
+    End Sub
+
+    Private Sub cmdAbreise_Click(sender As Object, e As EventArgs) Handles cmdAbreise.Click
+        txtAnzeige.Text = "Gäste abreise: " + _addin.RsAnzahlGästeAbreise(dateSelector.Value).ToString()
+    End Sub
 #End Region
 
 #Region "Properties"

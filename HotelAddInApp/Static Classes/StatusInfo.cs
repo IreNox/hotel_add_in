@@ -67,6 +67,7 @@ namespace HotelAddInApp
                         Environment.NewLine
                     );
                     break;
+                    /*
                 case "balloon":
                     form.notifyIcon.ShowBalloonTip(
                         60000,
@@ -74,7 +75,7 @@ namespace HotelAddInApp
                         String.Format("Es würden {0} neue Online-Buchungen eingelesen. Bitte hier klicken um mehr zu erfahren.", value),
                         ToolTipIcon.Info
                     );
-                    break;
+                    break;*/
 #if PHONE
                 case "callwatcher":
                     if (!(bool)value)

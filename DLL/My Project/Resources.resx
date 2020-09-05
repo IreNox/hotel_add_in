@@ -124,7 +124,13 @@
                 date(booking.BU_DATUM_BIS)              AS booking_depature,
                 booking.BU_PERS_TOTAL           AS booking_persons,
                 room.ME_BEZ                  AS room_name,
-                (customer.KU_VNAME || " " || customer.KU_NAME || " " || customer.KU_FIRMA) AS customer_name,
+				(CASE  
+					WHEN customer.is_firma AND customer.KU_FIRMA != ""
+				THEN
+					customer.KU_FIRMA
+				ELSE
+					(customer.KU_VNAME || " " || customer.KU_NAME || " ")
+				END) AS customer_name,
                 (CASE
                                WHEN booking.BU_GRUPPE != 0
                 THEN
